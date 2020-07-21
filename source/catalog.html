@@ -7,31 +7,29 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Барбершоп «Бородинский»">
+        <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Мишки">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden"></span>
-        </button>
+        <button class="main-navigation__toggle" type="button" aria-label="Развернуть/свернуть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
-              <a>
+              <a class="site-list__link">
                 Каталог товаров
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
             <li class="site-list__item">
-              <a href="">
+              <a class="site-list__link" href="">
                 Поиск по сайту
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Корзина: пока пуста
               </a>
             </li>
@@ -43,11 +41,11 @@
         <h1 class="page-main__title">Каталог товаров</h1>
         <section class="catalog">
             <ul class="catalog-list">
-                <li class="catalog-list__item">
+                <li class="catalog-list__item catalog-item">
                     <a class="catalog-item__link" href="">
                         <img  class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
                     </a>
-                    <h2 class="catalog-item__topic"><a href="">Зайчик-попрыгайчик</a></h2>
+                    <h3 class="catalog-item__topic"><a href="">Зайчик-попрыгайчик</a></h3>
                     <p class="catalog-item__desc">Рост 30 см, вес 200 г</p>
                     <span class="catalog-item__value">1 200 руб.</span>
                 </li>
@@ -55,7 +53,7 @@
                     <a class="catalog-item__link" href="">
                         <img  class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Корзинка для белья">
                     </a>
-                    <h2 class="catalog-item__topic"><a href="">Корзинка для белья</a></h2>
+                    <h3 class="catalog-item__topic"><a href="">Корзинка для белья</a></h3>
                     <p class="catalog-item__desc">Диаметр 15 см, высота 10 см</p>
                     <span class="catalog-item__value">690 руб.</span>
                 </li>
@@ -63,7 +61,7 @@
                     <a class="catalog-item__link" href="">
                         <img  class="catalog-item__image" src="https://via.placeholder.com/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
                     </a>
-                    <h2 class="catalog-item__topic"><a href="">Большая корзинка <br>для игрушек</a></h2>
+                    <h3 class="catalog-item__topic"><a href="">Большая корзинка <br>для игрушек</a></h3>
                     <p class="catalog-item__desc">Диаметр 30 см, высота 30 см</p>
                     <span class="catalog-item__value">1 500 руб.</span>
                 </li>
@@ -71,12 +69,14 @@
         </section>
         <section class="instructions-block">
             <h2 class="instructions-block__title">Процесс <br>производства</h2>
-            <div class="instructions-block__video"></div>
+            <div class="instructions-block__video">
+                <button class="instructions-block__play-video"></button>
+            </div>
             <p class="instructions-block__desc">
                 По просьбам наших любимых 
-                <br>фолловеров мы сняли для вас 
-                <br>подробное видео о том, как 
-                <br>появляются наши товары.
+                фолловеров мы сняли для вас 
+                подробное видео о том, как 
+                появляются наши товары.
             </p>
             <a class="instructions-block__link">Сделать заказ</a>
         </section>
@@ -84,31 +84,27 @@
     <footer class="page-footer">
       <ul class="socials-list">
         <li class="socials-list__item">
-          <a class="socials-list__link" href="" aria-label="link to instagram">
-              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="instagram">
+          <a class="socials-list__link" href="" aria-label="перейти в инстаграм">
+              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="инстаграм">
           </a>
         </li>
         <li class="socials-list__item">
-            <a class="socials-list__link" href="" aria-label="link to fb">
-                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="fb">
+            <a class="socials-list__link" href="" aria-label="перейти в фейсбук">
+                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="фейсбук">
             </a>
         </li>
         <li class="socials-list__item">
-            <a class="socials-list__link" href="" aria-label="link to twitter">
-                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="twitter">
+            <a class="socials-list__link" href="" aria-label="перейти в твиттер">
+                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="твиттер">
             </a>
         </li>
       </ul>
-      <ul class="copyright-list">
-        <li class="copyright-list__item">
-          <p>Разработано</p>
-        </li>
-        <li class="copyright-list__item">
-            <a class="copyright-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="html Academy">
-            </a>
-        </li>
-      </ul>
+      <div class="copyright">
+        <p>Разработано</p>
+        <a class="copyright-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="html Academy">
+        </a>
+    </div>
     </footer>
 </body>
 </html>

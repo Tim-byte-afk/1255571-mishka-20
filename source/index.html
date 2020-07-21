@@ -7,31 +7,29 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Барбершоп «Бородинский»">
+        <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Мишки">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">
-          <span class="visually-hidden"></span>
-        </button>
+        <button class="main-navigation__toggle" type="button" aria-label="Развернуть/свернуть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 Вязание на заказ
               </a>
             </li>
             <li class="site-list__item">
-              <a href="">
+              <a class="site-list__link" href="">
                 Поиск по сайту
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 Корзина: пока пуста
               </a>
             </li>
@@ -40,20 +38,18 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="entry">
-        <header class="entry__header">
-          <h1 class="entry__title title-entry">
-            Милые штуки <br>ручной <br>работы для дома
-          </h1>
-        </header>
-        <ul class="entry__list">
-          <li class="entry__item">
-            <a class="entry__link">
+      <section class="header-block">
+        <h1 class="header-block__title">
+          Милые штуки ручной работы для дома
+        </h1>
+        <ul class="header-block__list">
+          <li class="header-block__item">
+            <a class="header-block__link">
               <p>Предметы <br>интерьера</p>
             </a>
           </li>
-          <li class="entry__item">
-            <a class="entry__link">
+          <li class="header-block__item">
+            <a class="header-block__link">
               <p>Детские <br>игрушки</p>
             </a>
           </li>
@@ -63,20 +59,16 @@
         <h2 class="product-week__title">Вязаные корзинки</h2>
         <p class="product-week__subtitle">Товар недели</p>
         <p class="product-week__text">Экологически чистая пряжа,<br>ручная работа. Доступны в шести <br>расцветках, и трех размерах.</p>
-        <ul class="product-week__list">
-          <li class="product-week__item">
-            <p class="product-week__item-text">Цвет:</p>
-            <p class="product-week__item-text">«Тиффани»/серый</p>
-          </li>
-          <li class="product-week__item">
-            <p class="product-week__item-text">Диаметр:</p>
-            <p class="product-week__item-text">25 см</p>
-          </li>
-          <li class="product-week__item">
-            <p class="product-week__item-text">Высота:</p>
-            <p class="product-week__item-text">15 см</p>
-          </li>
-        </ul>
+        <dl class="product-week__list">
+            <dt class="product-week__element">Цвет:</dt>
+            <dd class="product-week__desc">«Тиффани»/серый</dd>
+
+            <dt class="product-week__element">Диаметр:</dt>
+            <dd class="product-week__desc">25 см</dd>
+
+            <dt class="product-week__element">Высота:</dt>
+            <dd class="product-week__desc">15 см</dd>
+        </dl>
         <img class="product-week__image" src="https://via.placeholder.com/260x315" width="260" height="315" alt="instagram">
         <p class="product-week__price">Цена: 990 руб.</p>
         <a class="product-week__link">Заказать</a>
@@ -108,14 +100,14 @@
         <div class="reviews-first">
           <h2 class="reviews-first__title">Отзывы</h2>
           <p class="reviews-first__text">Я молодая мама, но всё равно 
-            <br>фотографии не набирали и близко 
-            <br>такого количества лайков, как у 
-            <br>популярных инстамамочек. В 
-            <br>отчаянии, я накупила аксессуаров
-            <br>и игрушек в Мишке, и мои 
-            <br>фотографии сразу стали более 
-            <br>стильными, а также набирают
-            <br>больше лайков!
+            фотографии не набирали и близко 
+            такого количества лайков, как у 
+            популярных инстамамочек. В 
+            отчаянии, я накупила аксессуаров
+            и игрушек в Мишке, и мои 
+            фотографии сразу стали более 
+            стильными, а также набирают
+            больше лайков!
           </p>
           <p class="reviews-first__signature">
             Анастасия Красильникова 
@@ -171,16 +163,12 @@
             </a>
         </li>
       </ul>
-      <ul class="copyright-list">
-        <li class="copyright-list__item">
+      <div class="copyright">
           <p>Разработано</p>
-        </li>
-        <li class="copyright-list__item">
-            <a class="copyright-list__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="html Academy">
-            </a>
-        </li>
-      </ul>
+          <a class="copyright-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="html Academy">
+          </a>
+      </div>
     </footer>
     <div class="page-modal">
       <h2 class="page-modal__title">Добавить <br>в корзину</h2>
@@ -202,7 +190,7 @@
               </label>
           </div>
         </fieldset>
-        <button class="page-modal__button" type="submit">Добавить</button>
+        <button class="page-modal__Мишкиbutton" type="submit">Добавить</button>
       </form>
     </div>
 </body>
