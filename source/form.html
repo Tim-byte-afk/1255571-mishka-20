@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Мишки">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button" aria-label="Развернуть/свернуть меню"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+        <h1 class="page-main__title">Вязание на заказ</h1>
+        <div class="main-filter">
+            <p class="main-filter__text">
+                Мы будем рады воплотить в жизнь 
+                ваши пожелания! Заполните простую 
+                форму заказа и мы свяжемся с вами, 
+                чтобы уточнить детали.
+            </p>
+            <form class="main-filter__form" action="https://echo.htmlacademy.ru/" method="GET">
+                <fieldset class="main-filter__fieldset">
+                    <legend class="main-filter__legend">Тип</legend>
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="radio" name="types" value="1" checked>
+                            <span class="main-filter__radio"></span>
+                            Аксессуар для 
+                            <br>интерьера
+                        </label>
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="radio" name="types" value="2">
+                            <span class="main-filter__radio"></span>
+                            Детская игрушка
+                        </label>
+                </fieldset>
+                <fieldset class="main-filter__fieldset">
+                    <legend class="main-filter__legend">Цвет</legend>
+                    <div class="main-filter__board">
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="checkbox" checked>
+                            <span class="main-filter__checkbox"></span>
+                            Белый
+                        </label>
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="checkbox" checked>
+                            <span class="main-filter__checkbox"></span>
+                            Серый
+                        </label>
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="checkbox">
+                            <span class="main-filter__checkbox"></span>
+                            «Тиффани»
+                        </label>
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="checkbox">
+                            <span class="main-filter__checkbox"></span>
+                            Черный
+                        </label>
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="checkbox">
+                            <span class="main-filter__checkbox"></span>
+                            Розовый
+                        </label>
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="checkbox">
+                            <span class="main-filter__checkbox"></span>
+                            Оранжевый
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="main-filter__fieldset">
+                    <legend class="main-filter__legend">фио</legend>
+                    <div class="main-filter__board">
+                        <label class="main-filter__label">
+                            Имя:
+                            <input class="main-filter__input" type="text" placeholder="Введите ваше имя*">
+                        </label>
+                        <label class="main-filter__label">
+                            Фамилия:
+                            <input class="main-filter__input" type="text" placeholder="Укажите фамилию*">
+                        </label>
+                        <label class="main-filter__label">
+                            Отчество:
+                            <input class="main-filter__input" type="text" placeholder="Отчество, если желаете">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="main-filter__fieldset">
+                    <legend class="main-filter__legend">Тел</legend>
+                    <div class="main-filter__board">
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="main-filter__fieldset">
+                    <legend class="main-filter__legend">E-mail</legend>
+                    <div class="main-filter__board">
+                        <label class="main-filter__label">
+                            <input class="main-filter__input" type="email" name="user-email" placeholder="Ваш Email*">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="main-filter__fieldset">
+                    <legend class="main-filter__legend">Доп</legend>
+                    <div class="main-filter__board">
+                        <label class="main-filter__label">
+                            <textarea class="main-filter__input" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                        </label>
+                    </div>
+                </fieldset>
+                <p class="main-filter__desc">*Поля обязательны для заполнения</p>
+                <button class="main-filter__button" type="submit">Отправить заказ</button>
+            </form>
+        </div>
+    </main>
+    <footer class="page-footer">
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="" aria-label="link to instagram">
+              <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="instagram">
+          </a>
+        </li>
+        <li class="socials-list__item">
+            <a class="socials-list__link" href="" aria-label="link to fb">
+                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="fb">
+            </a>
+        </li>
+        <li class="socials-list__item">
+            <a class="socials-list__link" href="" aria-label="link to twitter">
+                <img src="https://via.placeholder.com/32x32" width="32" height="32" alt="twitter">
+            </a>
+        </li>
+      </ul>
+      <div class="copyright">
+        <p>Разработано</p>
+        <a class="copyright-list__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="html Academy">
+        </a>
+    </div>
+    </footer>
+</body>
+</html>
