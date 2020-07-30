@@ -1,0 +1,18 @@
+@import './functions.scss';
+@import './variables.scss';
+
+@mixin BtnVisited {
+    color: $main-light-black;
+}
+
+@mixin BtnHover {
+    color: $main-white;
+    background: linear-gradient(0deg, $main-light-black, $main-light-black);
+    border: 2px solid $main-light-black;
+}
+
+@mixin BtnActive {
+    color: $main-white-3;
+    background: linear-gradient(0deg, $main-light-black, $main-light-black);
+    border: 2px solid $main-light-black;
+}

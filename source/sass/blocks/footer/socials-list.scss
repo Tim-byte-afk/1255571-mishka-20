@@ -1,0 +1,26 @@
+@import '../../abstracts/functions.scss';
+@import '../../abstracts/variables.scss';
+@import '../../abstracts/mixins.scss';
+
+.socials-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    // outline: 5px solid rgba(255, 700, 0, 0.8);
+    // outline-offset: -5px;
+}
+
+.socials-list {
+    list-style: none;
+}
+
+.socials-list__item {
+    margin-left: 40px;
+}
+
+.socials-list__item:first-child {
+    margin-left: 87px;
+}

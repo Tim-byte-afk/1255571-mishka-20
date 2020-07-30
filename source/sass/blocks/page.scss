@@ -1,0 +1,86 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url('../../fonts/opensans.woff2') format("woff2"),
+        url('../../fonts/opensans.woff') format("woff");
+}
+  
+@font-face {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url('../../fonts/opensansbold.woff2') format("woff2"),
+        url('../../fonts/opensansbold.woff') format("woff");
+}
+
+.page {
+    height: 100%;
+}
+
+.page__body {
+    width: 260px;
+    margin: auto;
+    padding: 0;
+    font-family: "Open Sans", "Arial", sans-serif;;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: $main-black;
+    background-color: $main-white;
+}
+
+.page-modal {
+    display: none;
+}
+
+.page-main__title {
+    margin: 0;
+    padding: 0;
+    height: 177px;
+    margin-left: -30px;
+    margin-right: -30px;
+    background-color: $grey-two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 160px;
+    background: $grey-two;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.page-header {
+    height: 79px;
+    margin-left: -30px;
+    margin-right: -30px;
+    box-shadow: 0px 1px 0px $main-grey, inset 0px 1px 0px $main-grey;
+    // outline: 5px solid rgba(255, 0, 0, 0.8);
+    // outline-offset: -5px;
+}
+
+.page-header__logo {
+    display: flex;
+    height: 79px;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+
+@import './blocks/page.scss';
+@import './blocks/grid.scss';
+
+@import './blocks/header/main-navigation.scss';
+@import './blocks/header/site-list.scss';
+
+@import './blocks/footer/socials-list.scss';
+@import './blocks/footer/copyright.scss';
+
+@import './blocks/main/about-us.scss';
+@import './blocks/main/catalog.scss';
+@import './blocks/main/contacts.scss';
+@import './blocks/main/header-block.scss';
+@import './blocks/main/instructions-block.scss';
+@import './blocks/main/main-filter.scss';
+@import './blocks/main/product-week.scss';
+@import './blocks/main/reviews.scss';
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}

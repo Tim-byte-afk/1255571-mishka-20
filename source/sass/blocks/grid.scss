@@ -1,0 +1,25 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.page__body {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.page-main {
+    grid-column: 1/-1;
+
+    // outline: 5px solid rgba(255, 0, 200, 0.8);
+    // outline-offset: -5px;
+}
+
+.page-header {
+    grid-column: 1/-1;
+}
+
+.page-footer {
+    grid-column: 1/-1;
+}

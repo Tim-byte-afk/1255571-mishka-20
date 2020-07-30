@@ -1,0 +1,115 @@
+@import '../../abstracts/functions.scss';
+@import '../../abstracts/variables.scss';
+@import '../../abstracts/mixins.scss';
+
+.header-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 489px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background: url("../../../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
+    // margin-top: -17px;
+    margin-left: -30px;
+    margin-right: -30px;
+    // outline: 5px solid rgba(255, 0, 200, 0.8);
+    // outline-offset: -5px;
+}
+
+.header-block__title {
+    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 120px;
+    width: 260px;
+    height: 90px;
+}
+
+.header-block__list {
+    align-self: stretch;
+    font-size: 19px;
+    line-height: 24px;
+    color: $main-white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+// .header-block__link {
+//     display: block;
+//     height: 100%;
+//     // width: 100%;
+//     padding: 24px 160px 31px 30px;
+// }
+
+.header-block__link,
+.header-block__link:visited {
+    color: $main-white;
+}
+
+.header-block__link p {
+    padding: 0;
+    margin: 0;
+}
+
+.header-block__item {
+    display: flex;
+    width: 100%;
+}
+
+.header-block__item:first-child .header-block__link {
+    position: relative;
+    display: block;
+    padding: 24px 184px 31px 30px;
+    background-color: $light-green-btn;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.header-block__item:first-child .header-block__link:hover {
+    background-color: $light-green-btn-hover;
+    padding: 29px 184px 36px 30px;
+    margin-top: -10px;
+}
+
+.header-block__item:first-child .header-block__link::before  {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 244px;
+    width: 60px;
+    height: 65px;
+    background: url("../../../img/icon-interior.svg") no-repeat;
+    opacity: 0.5;
+}
+
+.header-block__item:last-child .header-block__link {
+    position: relative;
+    display: block;
+    padding: 24px 201px 31px 30px;
+    background-color: $dark-green-btn;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.header-block__item:last-child .header-block__link:hover {
+    background-color: $dark-green-btn-hover;
+    padding: 29px 201px 36px 30px;
+    margin-top: -10px;
+}
+
+.header-block__item:last-child .header-block__link::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 233px;
+    width: 60px;
+    height: 60px;
+    background: url("../../../img/icon-toy.svg") no-repeat;
+    opacity: 0.5;
+}
