@@ -18,3 +18,13 @@
     font-size: 19px;
     line-height: 18px;
 }
+
+// width="27" height="34"
+
+.copyright__link svg:hover {
+    fill: $green-line-hover;
+}
+
+.copyright__link svg:active {
+    opacity: 0.3;
+}

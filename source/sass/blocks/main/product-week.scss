@@ -118,5 +118,13 @@
 }
 
 .product-week__link:visited {
-    color: $main-light-black;
+    @include BtnVisited;
+}
+
+.product-week__link:hover {
+    @include BtnHover;
+}
+
+.product-week__link:active {
+    @include BtnActive;
 }

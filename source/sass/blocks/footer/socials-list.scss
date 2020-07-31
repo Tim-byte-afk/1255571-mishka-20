@@ -24,3 +24,11 @@
 .socials-list__item:first-child {
     margin-left: 87px;
 }
+
+.socials-list__link svg:hover {
+    fill: $green-line-hover;
+}
+
+.socials-list__link svg:active {
+    opacity: 0.3;
+}
