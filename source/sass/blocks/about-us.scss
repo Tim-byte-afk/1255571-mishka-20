@@ -1,6 +1,6 @@
-@import '../../abstracts/functions.scss';
-@import '../../abstracts/variables.scss';
-@import '../../abstracts/mixins.scss';
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
 
 .about-us {
     height: 1452 px;
@@ -36,7 +36,7 @@
     padding-top: 83px;
 }
 
-.about-us__item:nth-child(1)::before {
+.about-us__item--flower::before {
     content: "";
     position: absolute;
     top: 29px;
@@ -47,7 +47,7 @@
 
 }
 
-.about-us__item:nth-child(2)::before {
+.about-us__item--money::before {
     content: "";
     position: absolute;
     top: 29px;
@@ -58,7 +58,7 @@
 
 }
 
-.about-us__item:nth-child(3)::before {
+.about-us__item--heart::before {
     content: "";
     position: absolute;
     top: 34px;
@@ -69,7 +69,7 @@
 
 }
 
-.about-us__item:nth-child(4)::before {
+.about-us__item--ball::before {
     content: "";
     position: absolute;
     top: 32px;
@@ -80,7 +80,7 @@
 
 }
 
-.about-us__item:nth-child(5)::before {
+.about-us__item--rocket::before {
     content: "";
     position: absolute;
     top: 32px;
@@ -91,7 +91,7 @@
 
 }
 
-.about-us__item:nth-child(6)::before {
+.about-us__item--gift::before {
     content: "";
     position: absolute;
     top: 30px;

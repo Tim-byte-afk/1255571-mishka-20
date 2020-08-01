@@ -1,10 +1,6 @@
-@import '../../abstracts/functions.scss';
-@import '../../abstracts/variables.scss';
-@import '../../abstracts/mixins.scss';
-
-.contacts {
-    
-}
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
 
 .contacts__title {
     margin: 0;
@@ -45,19 +41,19 @@
 }
 
 .contacts__item .contacts__item-text:nth-child(2) a {
-    color: $main-light-black;
+    color: $Tundora;
     text-decoration: underline;
-    text-decoration-color: $green-line;
+    text-decoration-color: $Downy-2;
 }
 
 .contacts__item .contacts__item-text:nth-child(2) a:hover {
-    color: $green-line-hover;
+    color: $PuertoRico;
     text-decoration: underline;
-    text-decoration-color: $green-line-hover;
+    text-decoration-color: $PuertoRico;
 }
 
 .contacts__item .contacts__item-text:nth-child(2) a:active {
-    color: $green-line-hover;
+    color: $PuertoRico;
     text-decoration: none;
 }
 
@@ -87,12 +83,12 @@
     display: block;
     font-style: normal;
     font-weight: bold;
-    color: $main-light-black;
+    color: $Tundora;
     font-size: 18px;
     line-height: 20px;
     padding: 14px 26px 15px 49px;
     text-transform: uppercase;
-    border: 2px solid $main-light-black;
+    border: 2px solid $Tundora;
     margin-top: 39px;
     margin-bottom: 39px;
 }

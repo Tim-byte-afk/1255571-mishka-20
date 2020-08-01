@@ -1,6 +1,6 @@
-@import '../../abstracts/functions.scss';
-@import '../../abstracts/variables.scss';
-@import '../../abstracts/mixins.scss';
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
 
 .copyright {
     display: flex;
@@ -22,7 +22,7 @@
 // width="27" height="34"
 
 .copyright__link svg:hover {
-    fill: $green-line-hover;
+    fill: $PuertoRico;
 }
 
 .copyright__link svg:active {

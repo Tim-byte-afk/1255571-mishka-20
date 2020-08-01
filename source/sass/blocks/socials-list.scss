@@ -1,6 +1,6 @@
-@import '../../abstracts/functions.scss';
-@import '../../abstracts/variables.scss';
-@import '../../abstracts/mixins.scss';
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
 
 .socials-list {
     display: flex;
@@ -26,7 +26,7 @@
 }
 
 .socials-list__link svg:hover {
-    fill: $green-line-hover;
+    fill: $PuertoRico;
 }
 
 .socials-list__link svg:active {

@@ -1,6 +1,6 @@
-@import '../../abstracts/functions.scss';
-@import '../../abstracts/variables.scss';
-@import '../../abstracts/mixins.scss';
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
 
 .reviews {
     position: relative;
@@ -9,15 +9,11 @@
 .reviews::after {
     position: absolute;
     content: '';
-    border-bottom: 6px solid $grey-two;
+    border-bottom: 6px solid $Seashell;
     border-image: url('../../../img/bg-zigzag-line.svg') 30 repeat;
     width: 320px;
     transform: translateX(-50%) rotate(180deg);
     left: 50%;
-}
-
-.reviews-first {
-
 }
 
 .reviews-first__title {
@@ -74,7 +70,7 @@
 .reviews__item {
     width: 260px;
     height: 52px;
-    border: 1px solid $main-grey;
+    border: 1px solid $Gallery;
 }
 
 .reviews__item:first-child {
@@ -100,7 +96,7 @@
     left: 38px;
     width: 50px;
     height: 26px;
-    background: $main-white url("../../../img/icon-left-arrow.svg") no-repeat;
+    background: $White url("../../../img/icon-left-arrow.svg") no-repeat;
 }
 
 .reviews__item:last-child .reviews__link::before {
@@ -111,7 +107,7 @@
     left: 38px;
     width: 50px;
     height: 26px;
-    background: $main-white url("../../../img/icon-right-arrow.svg") no-repeat;
+    background: $White url("../../../img/icon-right-arrow.svg") no-repeat;
 }
 
 .reviews__item:first-child .reviews__link:hover::before,
@@ -132,7 +128,7 @@
     line-height: 20px;
     padding: 14px 51px 15px 79px;
     text-transform: uppercase;
-    border: 2px solid $main-light-black;
+    border: 2px solid $Tundora;
     margin-top: 36px;
     margin-bottom: 45px;
 }

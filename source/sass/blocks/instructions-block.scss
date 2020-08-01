@@ -1,6 +1,6 @@
-@import '../../abstracts/functions.scss';
-@import '../../abstracts/variables.scss';
-@import '../../abstracts/mixins.scss';
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
 
 .instructions-block {
     margin-top: 30px;
@@ -61,6 +61,16 @@
     background: url("../../../img/icon-play.svg") no-repeat;
 }
 
+.instructions-block__play-video:hover::before {
+    width: 100px;
+    height: 77px;
+}
+
+.instructions-block__play-video:active::before {
+    width: 100px;
+    height: 77px;
+}
+
 .instructions-block__desc {
     padding: 0;
     margin: 0;
@@ -87,8 +97,8 @@
     line-height: 16px;
     padding: 16px 21px 15px 19px;
     text-transform: uppercase;
-    border: 2px solid $main-light-black;
-    color: $main-light-black;
+    border: 2px solid $Tundora;
+    color: $Tundora;
 }
 
 .instructions-block__link:visited {

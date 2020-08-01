@@ -1,21 +1,28 @@
 
-@import './blocks/page.scss';
-@import './blocks/grid.scss';
+@import 'blocks/page.scss';
 
-@import './blocks/header/main-navigation.scss';
-@import './blocks/header/site-list.scss';
+@import 'blocks/page-modal.scss';
+@import 'blocks/page-main.scss';
+@import 'blocks/page-header.scss';
+@import 'blocks/page-footer.scss';
 
-@import './blocks/footer/socials-list.scss';
-@import './blocks/footer/copyright.scss';
+@import 'blocks/main-navigation.scss';
+@import 'blocks/site-list.scss';
 
-@import './blocks/main/about-us.scss';
-@import './blocks/main/catalog.scss';
-@import './blocks/main/contacts.scss';
-@import './blocks/main/header-block.scss';
-@import './blocks/main/instructions-block.scss';
-@import './blocks/main/main-filter.scss';
-@import './blocks/main/product-week.scss';
-@import './blocks/main/reviews.scss';
+@import 'blocks/socials-list.scss';
+@import 'blocks/copyright.scss';
+
+@import 'blocks/about-us.scss';
+@import 'blocks/catalog.scss';
+@import 'blocks/catalog-list.scss';
+@import 'blocks/catalog-item.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/header-block.scss';
+@import 'blocks/instructions-block.scss';
+@import 'blocks/main-filter.scss';
+@import 'blocks/product-week.scss';
+@import 'blocks/reviews.scss';
+
 
 
 

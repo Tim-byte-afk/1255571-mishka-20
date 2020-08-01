@@ -2,17 +2,17 @@
 @import './variables.scss';
 
 @mixin BtnVisited {
-    color: $main-light-black;
+    color: $Tundora;
 }
 
 @mixin BtnHover {
-    color: $main-white;
-    background: linear-gradient(0deg, $main-light-black, $main-light-black);
-    border: 2px solid $main-light-black;
+    color: $White;
+    background: linear-gradient(0deg, $Tundora, $Tundora);
+    border: 2px solid $Tundora;
 }
 
 @mixin BtnActive {
-    color: $main-white-3;
-    background: linear-gradient(0deg, $main-light-black, $main-light-black);
-    border: 2px solid $main-light-black;
+    color: $whiteRgba;
+    background: linear-gradient(0deg, $Tundora, $Tundora);
+    border: 2px solid $Tundora;
 }

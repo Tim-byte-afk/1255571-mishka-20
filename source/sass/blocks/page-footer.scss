@@ -1,0 +1,19 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 160px;
+    background: $Seashell;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+// ГРИДЫ
+
+.page-footer {
+    grid-column: 1/-1;
+}
