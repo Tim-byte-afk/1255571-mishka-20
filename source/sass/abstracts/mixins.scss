@@ -1,0 +1,18 @@
+@import './functions.scss';
+@import './variables.scss';
+
+@mixin BtnVisited {
+    color: $Tundora;
+}
+
+@mixin BtnHover {
+    color: $White;
+    background: linear-gradient(0deg, $Tundora, $Tundora);
+    border: 2px solid $Tundora;
+}
+
+@mixin BtnActive {
+    color: $whiteRgba;
+    background: linear-gradient(0deg, $Tundora, $Tundora);
+    border: 2px solid $Tundora;
+}

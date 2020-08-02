@@ -1,0 +1,103 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.about-us {
+    height: 1452 px;
+}
+
+.about-us__title {
+    padding: 0;
+    margin: 0;
+    margin-top: 73px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.about-us__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-us__item {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.about-us__item-text {
+    padding: 0;
+    margin: 0;
+    padding-top: 83px;
+}
+
+.about-us__item--flower::before {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 9px;
+    width: 32px;
+    height: 37px;
+    background: url("../../../img/icon-feature-flower.svg") no-repeat;
+
+}
+
+.about-us__item--money::before {
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    width: 47px;
+    height: 27px;
+    background: url("../../../img/icon-feature-money.svg") no-repeat;
+
+}
+
+.about-us__item--heart::before {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 7px;
+    width: 34px;
+    height: 30px;
+    background: url("../../../img/icon-feature-heart.svg") no-repeat;
+
+}
+
+.about-us__item--ball::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 4px;
+    width: 35px;
+    height: 37px;
+    background: url("../../../img/icon-feature-ball.svg") no-repeat;
+
+}
+
+.about-us__item--rocket::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: -5px;
+    width: 60px;
+    height: 37px;
+    background: url("../../../img/icon-feature-rocket.svg") no-repeat;
+
+}
+
+.about-us__item--gift::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 3px;
+    width: 33px;
+    height: 32px;
+    background: url("../../../img/icon-feature-gift.svg") no-repeat;
+
+}

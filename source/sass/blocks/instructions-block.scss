@@ -1,0 +1,114 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.instructions-block {
+    margin-top: 30px;
+    margin-bottom: 59px;
+    border: 1px solid #ECECEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.instructions-block__title {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-left: 91px;
+    margin-top: 21px;
+    margin-bottom: 26px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.instructions-block__title::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 35px;
+    width: 32px;
+    height: 32px;
+    background: url("../../../img/icon-video.svg") no-repeat;
+}
+
+.instructions-block__video {
+    position: relative;
+    width: 260px;
+    height: 150px;
+    background: url("../../../img/video-mobile@1x.jpg");
+}
+
+.instructions-block__play-video {
+    position: absolute;
+    top: 35px;
+    left: 74px;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.instructions-block__play-video::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 77px;
+    background: url("../../../img/icon-play.svg") no-repeat;
+}
+
+.instructions-block__play-video:hover::before {
+    width: 100px;
+    height: 77px;
+}
+
+.instructions-block__play-video:active::before {
+    width: 100px;
+    height: 77px;
+}
+
+.instructions-block__desc {
+    padding: 0;
+    margin: 0;
+    margin-top: 35px;
+    margin-left: 34px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.instructions-block__link,
+.instructions-block__link:visited {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 34px;
+    margin-right: 32px;
+    margin-bottom: 33px;
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    padding: 16px 21px 15px 19px;
+    text-transform: uppercase;
+    border: 2px solid $Tundora;
+    color: $Tundora;
+}
+
+.instructions-block__link:visited {
+    @include BtnVisited;
+}
+
+.instructions-block__link:hover {
+    @include BtnHover;
+}
+
+.instructions-block__link:active {
+    @include BtnActive;
+}

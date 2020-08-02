@@ -1,0 +1,29 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+@import '../font.scss';
+
+.page {
+    height: 100%;
+}
+
+.page__body {
+    width: 260px;
+    margin: auto;
+    padding: 0;
+    font-family: "Open Sans", "Arial", sans-serif;;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: $Black;
+    background-color: $White;
+}
+
+// ГРИДЫ
+
+.page__body {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: min-content 1fr min-content;
+}

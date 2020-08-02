@@ -1,0 +1,23 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.main-navigation__toggle {
+    position: absolute;
+    top: 31px;
+    margin-left: 13.9%;
+    align-self: flex-end;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.main-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    background: url("../../../img/icon-menu-open.svg") no-repeat;
+}
