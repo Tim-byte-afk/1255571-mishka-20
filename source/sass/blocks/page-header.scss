@@ -3,23 +3,60 @@
 @import '../abstracts/mixins.scss';
 
 .page-header {
-    height: 79px;
-    margin-left: -30px;
-    margin-right: -30px;
+    position: relative;
     box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
     // outline: 5px solid rgba(255, 0, 0, 0.8);
     // outline-offset: -5px;
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        // flex-wrap: wrap;
+    }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
+}
+
+.page-header__logo-link {
+    // display: flex;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        margin-top: 22px;
+        margin-bottom: 20px;
+        order: -1;
+        z-index: 10;
+    }
+    
+    @media (min-width: $desktop-width) {
+        position: absolute;
+        left: 450px;
+        justify-content: center;
+        margin-top: 9px;
+        margin-bottom: 14px;
+        order: 2;
+        z-index: 10;
+    }
 }
 
 .page-header__logo {
-    display: flex;
-    height: 79px;
-    justify-content: center;
-    align-items: center;
+    width: 86px;
+    height: 35px;
+    @media (min-width: $tablet-width) {
+        width: 113px;
+        height: 46px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        width: 136px;
+        height: 65px;
+    }
 }
 
 // ГРИДЫ
 
 .page-header {
-    grid-column: 1/-1;
+    grid-column: 2/-2;
 }

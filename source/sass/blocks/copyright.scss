@@ -7,8 +7,15 @@
     height: 80px;
     justify-content: center;
     align-items: center;
-    // outline: 5px solid rgba(255, 0, 200, 0.8);
-    // outline-offset: -5px;
+    @media (min-width: $tablet-width) {
+        margin-top: 35px;
+        margin-left: 85px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-top: 27px;
+        margin-left: 313px;
+    }
 }
 
 .copyright__text {

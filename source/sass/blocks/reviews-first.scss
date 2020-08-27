@@ -1,0 +1,85 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.reviews-first__title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 58px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    @media (min-width: $tablet-width) {
+        font-size: 43px;
+        line-height: 50px;
+        margin-top: 167px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        font-size: 53px;
+        line-height: 57px;
+        margin-top: 166px;
+        margin-left: 174px;
+    }
+}
+
+.reviews-first__text {
+    margin: 0;
+    padding: 0;
+    margin-top: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    @media (min-width: $tablet-width) {
+        font-size: 17px;
+        margin-top: 39px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-top: 35px;
+        margin-left: 175px;
+    }
+}
+
+.reviews-first__signature {
+    margin: 0;
+    padding: 0;
+    margin-top: 33px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    @media (min-width: $tablet-width) {
+        font-size: 18px;
+        margin-top: 58px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        font-size: 17px;
+        margin-top: 44px;
+        margin-left: 175px;
+    }
+}
+
+.reviews-first__signature-id {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    @media (min-width: $tablet-width) {
+        font-size: 18px;
+
+    }
+    
+    @media (min-width: $desktop-width) {
+        font-size: 17px;
+        margin-top: 4px;
+        margin-left: 175px;
+    }
+}
