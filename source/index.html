@@ -3,12 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=adb9761c-0177-44a3-9b7f-53058e907c06&lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="./img/logo-mobile.svg" width="86" height="35" alt="Мишки">
+      <a class="page-header__logo-link">
+        <picture class="top-menu__logo-options">
+          <source class="top-menu__logo" media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source class="top-menu__logo" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <source class="top-menu__logo" media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+          <img class="top-menu__logo" src="img/logo-mobile.svg"
+              alt="логотип Мишка">
+        </picture>
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button" aria-label="Развернуть/свернуть меню"></button>
@@ -24,14 +34,33 @@
                 Вязание на заказ
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="">
+          </ul>
+          <ul class="main-navigation__user-list site-list__user">
+            <li class="site-list__user-item">
+              <a class="site-list__user-link" href="">
                 Поиск по сайту
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="#">
+            <li class="site-list__user-item">
+              <a class="site-list__user-link" href="#">
                 Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+          <ul class="main-navigation__list--special site-list--special">
+            <li class="site-list__item--special">
+              <a class="site-list__link--special" href="">
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-list__item--special">
+              <a class="site-list__link--special" href="#">
+                Распродажа
+              </a>
+            </li>
+            <li class="site-list__item--special">
+              <a class="site-list__link--special" href="#">
+                Бесплатная доставка по России
               </a>
             </li>
           </ul>
@@ -41,7 +70,7 @@
     <main class="page-main">
       <section class="header-block">
         <h1 class="header-block__title">
-          Милые штуки ручной работы для дома
+          Милые штуки <br class="header-block__visually-hidden">ручной <br class="header-block__visually-hidden">работы для дома
         </h1>
         <ul class="header-block__list">
           <li class="header-block__item">
@@ -59,20 +88,27 @@
       <section class="product-week">
         <h2 class="product-week__title">Вязаные корзинки</h2>
         <p class="product-week__subtitle">Товар недели</p>
-        <p class="product-week__text">Экологически чистая пряжа,<br>ручная работа. Доступны в шести <br>расцветках, и трех размерах.</p>
-        <dl class="product-week__list">
-            <dt class="product-week__element">Цвет:</dt>
-            <dd class="product-week__desc">«Тиффани»/серый</dd>
+        <div class="product-week__wrapper">
+          <p class="product-week__text">Экологически чистая пряжа,<br>ручная работа. Доступны в шести <br>расцветках, и трех размерах.</p>
+          <dl class="product-week__list">
+              <dt class="product-week__element">Цвет:</dt>
+              <dd class="product-week__desc">«Тиффани»/серый</dd>
 
-            <dt class="product-week__element">Диаметр:</dt>
-            <dd class="product-week__desc">25 см</dd>
+              <dt class="product-week__element">Диаметр:</dt>
+              <dd class="product-week__desc">25 см</dd>
 
-            <dt class="product-week__element">Высота:</dt>
-            <dd class="product-week__desc">15 см</dd>
-        </dl>
-        <img class="product-week__image" src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Товар недели">
-        <p class="product-week__price">Цена: 990 руб.</p>
-        <a class="product-week__link" href="">Заказать</a>
+              <dt class="product-week__element">Высота:</dt>
+              <dd class="product-week__desc">15 см</dd>
+          </dl>
+          <picture class="product-week__image-options">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x">
+
+            <img class="product-week__image" src="./img/triple-set-mobile@1x.jpg"  alt="Товар недели">
+          </picture>
+          <p class="product-week__price">Цена: 990 руб.</p>
+          <a class="product-week__link" href="">Заказать</a>
+        </div>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
@@ -130,18 +166,18 @@
           <li class="contacts__item">
             <p class="contacts__item-text">e-mail:</p>
             <p class="contacts__item-text">
-              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts__item-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </p>
           </li>
           <li class="contacts__item">
             <p class="contacts__item-text">адрес:</p>
             <p class="contacts__item-text">г. Санкт-Петербург,
               <br>ул. Большая
-              <br>Конюшенная,
+              <br  class="contacts__visually-hidden">Конюшенная,
               <br>д. 19/8, офис 101</p>
           </li>
         </ul>
-        <div class="contacts__map"></div>
+        <div class="contacts__map" id="map"></div>
         <a class="contacts__link" href="">Напишите нам</a>
       </section>
     </main>

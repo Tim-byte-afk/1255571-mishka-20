@@ -2,6 +2,27 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins.scss';
 
+.contacts {
+    position: relative;
+}
+
+.contacts::before {
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        content: "";
+        top: -21px;
+        left: 618px;
+        width: 47px;
+        height: 81px;
+        background: url("../../img/icon-flag.svg") no-repeat;
+    }
+    
+    @media (min-width: $desktop-width) {
+        top: -18px;
+        left: 62px;
+    }
+}
+
 .contacts__title {
     margin: 0;
     padding: 0;
@@ -10,6 +31,18 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 30px;
+    @media (min-width: $tablet-width) {
+        margin-top: 200px;
+        font-size: 43px;
+        line-height: 50px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        font-size: 53px;
+        line-height: 57px;
+        margin-top: 335px;
+        margin-left: 175px;
+    }
 }
 
 .contacts__list {
@@ -21,6 +54,19 @@
     font-size: 15px;
     line-height: 30px;
     list-style: none;
+    @media (min-width: $tablet-width) {
+        margin-top: 50px;
+        font-size: 17px;
+        display: flex;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-top: 35px;
+        margin-left: 175px;
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 
 .contacts__item {
@@ -29,6 +75,16 @@
 
 .contacts__item:not(:first-child) {
     margin-top: 30px;
+    @media (min-width: $tablet-width) {
+        margin-top: 0px;
+        margin-left: 50px;
+        // width: 530px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
 }
 
 .contacts__item-text {
@@ -38,44 +94,77 @@
 
 .contacts__item .contacts__item-text:nth-child(2) {
     margin-left: 31px;
+    @media (min-width: $tablet-width) {
+        margin-left: 26px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-left: 25px;
+    }
 }
 
-.contacts__item .contacts__item-text:nth-child(2) a {
+.contacts__item .contacts__item-link {
     color: $Tundora;
     text-decoration: underline;
     text-decoration-color: $Downy-2;
+    @media (min-width: $tablet-width) {
+        text-decoration: none;
+        border-bottom: 1px solid $Downy-2;
+        padding-bottom: 3px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        padding-bottom: 7px;
+    }
 }
 
-.contacts__item .contacts__item-text:nth-child(2) a:hover {
+.contacts__item .contacts__item-link:hover {
     color: $PuertoRico;
     text-decoration: underline;
     text-decoration-color: $PuertoRico;
+    @media (min-width: $tablet-width) {
+        text-decoration: none;
+        border-bottom: 1px solid $PuertoRico;
+        padding-bottom: 3px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
-.contacts__item .contacts__item-text:nth-child(2) a:active {
+.contacts__item .contacts__item-link:active {
     color: $PuertoRico;
     text-decoration: none;
+    @media (min-width: $tablet-width) {
+        border: none;
+    }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .contacts__map {
-    position: relative;
     margin-top: 33px;
     margin-left: -30px;
     margin-right: -30px;
-    width: 322px;
+    width: 320px;
     height: 457px;
-    background: url("../../../img/map-mobile@1x.jpg") no-repeat;
-}
-
-.contacts__map::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 145px;
-    left: 138px;
-    width: 67px;
-    height: 100px;
-    background: url("../../../img/icon-map-pin.svg") no-repeat;
+    // background: url("../../../img/map-mobile@1x.jpg") no-repeat;
+    @media (min-width: $tablet-width) {
+        margin-top: 48px;
+        margin-left: -50px;
+        margin-right: -50px;
+        width: 768px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        position: absolute;
+        top: -130px;
+        left: 575px;
+        width: 527px;
+    }
 }
 
 .contacts__link,
@@ -91,6 +180,20 @@
     border: 2px solid $Tundora;
     margin-top: 39px;
     margin-bottom: 39px;
+    @media (min-width: $tablet-width) {
+        font-size: 17px;
+        width: 176px;
+        margin-top: 55px;
+        margin-left: 220px;
+        margin-bottom: 55px;
+        padding: 14px 13px 15px 37px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-top: 82px;
+        margin-left: 175px;
+        margin-bottom: 105px;
+    }
 }
 
 .contacts__link:visited {
@@ -103,4 +206,14 @@
 
 .contacts__link:active {
     @include BtnActive;
+}
+
+.contacts__visually-hidden {
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
 }

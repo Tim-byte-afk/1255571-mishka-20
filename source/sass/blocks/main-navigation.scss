@@ -2,10 +2,31 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins.scss';
 
+.main-navigation {
+    // @media (min-width: $tablet-width) {
+    //     height: 89px;
+    // }
+    
+    // @media (min-width: $desktop-width) {
+    //     height: 89px;
+    // }
+}
+
+.main-navigation__list--special {
+    display: none;
+    @media (min-width: $tablet-width) {
+        display: flex
+    }
+    
+    @media (min-width: $desktop-width) {
+        display: flex
+    }
+}
+
 .main-navigation__toggle {
     position: absolute;
     top: 31px;
-    margin-left: 13.9%;
+    margin-left: 234px;
     align-self: flex-end;
     font-size: 0;
     border: 0;
@@ -20,4 +41,16 @@
     width: 20px;
     height: 15px;
     background: url("../../../img/icon-menu-open.svg") no-repeat;
+    @media (min-width: $tablet-width) {
+        display: none; 
+    }
+    
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+.main-navigation__wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
