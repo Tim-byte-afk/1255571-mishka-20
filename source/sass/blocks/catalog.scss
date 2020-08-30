@@ -2,3 +2,25 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins.scss';
 
+.catalog {
+    display: flex;
+    justify-content: center;
+    @media (min-width: $tablet-width) {
+        
+    }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
+}
+
+.catalog__container {
+    width: 260px;
+    @media (min-width: $tablet-width) {
+        width: 668px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        width: 1050px;
+    }
+}

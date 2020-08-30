@@ -21,12 +21,12 @@
         font-size: 15px;
         flex-direction: row;
         order: 3;
-        // display: none;
     }
     
     @media (min-width: $desktop-width) {
         font-size: 17px;
         order: 1;
+        min-height: 88px;
     }
 }
 
@@ -48,12 +48,17 @@
     @media (min-width: $tablet-width) {
         flex-direction: row;
         order: 2;
-        padding-left: 352px;
+        justify-content: flex-end;
+        flex-basis: 100%;
+        flex-grow: 1;
+        margin-right: -22px;
+        min-height: 88px;
     }
     
     @media (min-width: $desktop-width) {
         order: 3;
-        padding-left: 344px;
+        margin-right: -18px;
+        flex-basis: 40%;
     }
 }
 
@@ -80,6 +85,8 @@
     
     @media (min-width: $desktop-width) {
         display: flex;
+        justify-content: flex-start;
+        flex-grow: 1;
     }
 }
 
@@ -87,12 +94,19 @@
     position: relative;
     mix-blend-mode: normal;
     box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
+    @media (min-width: $tablet-width) {
+        box-shadow: 0px 0px 0px $Gallery, inset 0px 0px 0px $Gallery;
+    }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
 .site-list__user-item {
     position: relative;
     mix-blend-mode: normal;
-    box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
+    // box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
     @media (min-width: $tablet-width) {
         padding-top: 5px;
         padding-left: 3px;
@@ -103,10 +117,20 @@
     }
 }
 
+.site-list__item:nth-child(1) {
+    @media (min-width: $tablet-width) {
+
+    }
+    
+    @media (min-width: $desktop-width) {
+        border-right: 1px solid $blackRgba;
+    }
+}
+
 .site-list__item--special {
     position: relative;
     mix-blend-mode: normal;
-    box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
+    // box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
 }
 
 .site-list__item--special:not(:nth-child(3)) {
@@ -125,7 +149,8 @@
     @media (min-width: $tablet-width) {
         font-size: 0;
         width: 79px;
-        border: 1px solid $blackRgba;
+        border-left: 1px solid $blackRgba;
+        border-right: 1px solid $blackRgba;
     }
     
     @media (min-width: $desktop-width) {
@@ -133,15 +158,29 @@
     }
 }
 
+.site-list__item--special:nth-child(3) {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+}
+
 .site-list__item .site-list__link {
     padding: 28px 55px 27px 77px;
     display: block;
     @media (min-width: $tablet-width) {
-        padding: 24px 7px 27px 30px;
+        padding: 22px 7px 27px 30px;
     }
     
     @media (min-width: $desktop-width) {
-        padding: 33px 41px 27px 30px;
+        padding: 33px 35px 27px 30px;
+    }
+}
+
+.site-list__item:nth-child(2) .site-list__link {
+    @media (min-width: $desktop-width) {
+        padding: 33px 30px 27px 35px;
     }
 }
 
@@ -149,7 +188,7 @@
     padding: 28px 55px 27px 77px;
     display: block;
     @media (min-width: $tablet-width) {
-        padding: 28px 25px 27px 77px;
+        padding: 28px 22px 27px 79px;
     }
     
     @media (min-width: $desktop-width) {
@@ -161,17 +200,11 @@
     padding: 28px 55px 27px 77px;
     display: block;
     @media (min-width: $tablet-width) {
-        padding: 24px 7px 27px 185px;
+        padding: 20px 30px 27px 35px;
     }
     
     @media (min-width: $desktop-width) {
-        padding: 22px 32px 27px 30px;
-    }
-}
-
-.site-list__item--special:nth-child(3) .site-list__link--special {
-    @media (min-width: $desktop-width) {
-        padding: 22px 10px 27px 472px;
+        padding: 20px 32px 27px 30px;
     }
 }
 
@@ -184,6 +217,18 @@
     // padding: 29px 65px 26px 65px;
     // width: 100%;
     color: $Black;
+}
+
+.site-list__link:hover,
+.site-list__user-link:hover,
+.site-list__link--special:hover {
+    opacity: 0.6;
+}
+
+.site-list__link:active,
+.site-list__user-link:active,
+.site-list__link--special:active {
+    opacity: 0.3;
 }
 
 .site-list__user-item:nth-child(1) .site-list__user-link::before {

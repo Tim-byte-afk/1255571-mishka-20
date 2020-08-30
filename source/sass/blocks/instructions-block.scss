@@ -6,13 +6,10 @@
     position: relative;
     margin-top: 30px;
     margin-bottom: 59px;
-    border: 1px solid #ECECEC;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
     @media (min-width: $tablet-width) {
-        margin-top: 45px;
+        margin-top: 53px;
     }
     
     @media (min-width: $desktop-width) {
@@ -22,13 +19,32 @@
     }
 }
 
+.instructions-block__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #ECECEC;
+    width: 260px;
+    @media (min-width: $tablet-width) {
+        width: 668px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        width: 1050px;
+        display: flex;
+        flex-direction: column;
+        // flex-grow: 1;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 96px 36px 60px 0px;
+    }
+}
+
 .instructions-block__title {
     position: relative;
-    padding: 0;
     margin: 0;
-    padding-left: 91px;
-    margin-top: 21px;
-    margin-bottom: 26px;
+    padding: 21px 5px 26px 91px;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
@@ -36,34 +52,33 @@
     @media (min-width: $tablet-width) {
         order: 2;
         font-size: 20px;
-        margin-top: 41px;
+        padding-top: 41px;
         padding-left: 107px;
-        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
     
     @media (min-width: $desktop-width) {
         margin: 0;
-        margin-left: 654px;
-        padding-top: 96px;
+        padding-top: 0px;
     }
 }
 
 .instructions-block__title::before {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 27px;
     left: 35px;
     width: 32px;
     height: 32px;
     background: url("../../img/icon-video.svg") no-repeat;
     @media (min-width: $tablet-width) {
-        top: -5px;
+        top: 35px;
         left: 40px;
     }
     
     @media (min-width: $desktop-width) {
         top: 10px;
-        left: 954px;
+        left: 54px;
     }
 }
 
@@ -78,6 +93,7 @@
 }
 
 .instructions-block__video {
+    order: 1;
     position: relative;
     width: 260px;
     height: 150px;
@@ -140,10 +156,8 @@
 }
 
 .instructions-block__desc {
-    padding: 0;
     margin: 0;
-    margin-top: 35px;
-    margin-left: 34px;
+    padding: 35px 5px 0px 34px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -152,13 +166,14 @@
         order: 2;
         font-size: 15px;
         line-height: 30px;
-        margin-top: 25px;
-        margin-left: 40px;
+        padding-top: 25px;
+        padding-left: 40px;
+        padding-right: 10px;
     }
     
     @media (min-width: $desktop-width) {
         padding-top: 2px;
-        margin-left: 761px;
+        width: 120px;
     }
 }
 

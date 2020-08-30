@@ -4,20 +4,8 @@
 
 .product-week {
     position: relative;
-    @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        margin-left: 33px;
-    }
+    display: flex;
+    justify-content: center;
 }
 
 .product-week::after {
@@ -28,6 +16,27 @@
     width: 320px;
     transform: translateX(-50%) rotate(180deg);
     left: 50%;
+}
+
+.product-week__container {
+    position: relative;
+    width: 260px;
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 668px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-left: 65px;
+        width: 1050px;
+    }
 }
 
 .product-week__title {
@@ -87,10 +96,6 @@
     @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: column;
-        // flex-wrap: wrap;
-        // flex-grow: 1;
-        // flex-shrink: 0;
-        // flex-basis: 100%;
         order: 3;
     }
     
@@ -136,7 +141,6 @@
     padding: 0;
     margin: 0;
     margin-top: 20px;
-    // height: 120px;
     @media (min-width: $tablet-width) {
         width: 50%;
         margin-top: 40px;
@@ -181,7 +185,7 @@
     @media (min-width: $desktop-width) {
         position: absolute;
         top: 42px;
-        left: 492px;
+        left: 558px;
         z-index: -1;
     }
 }
@@ -217,9 +221,6 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
-    // padding: 0;
-    // margin: 0;
-    // margin-top: 74px;
     padding: 14px 78px 12px 82px;
     text-transform: uppercase;
     border: 2px solid $Tundora;

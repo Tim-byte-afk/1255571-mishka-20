@@ -6,16 +6,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    height: 160px;
+    min-height: 160px;
     background: $Seashell;
-    margin-left: -30px;
-    margin-right: -30px;
 
     @media (min-width: $tablet-width) {
-        margin-left: -50px;
-        margin-right: -50px;
         flex-direction: row;
+        min-height: 143px;
     }
     
     @media (min-width: $desktop-width) {
@@ -23,24 +22,50 @@
     }
 }
 
-.page-footer::before {
+.page-footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    margin-top: 33px;
     @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        top: 50px;
-        left: 50px;
-        width: 105px;
-        height: 35px;
-        background: url("../../img/logo-footer.svg") no-repeat;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 668px;
+        margin-top: 0px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1050px;
+    }
+}
+
+.page-footer__link {
+    display: none;
+    @media (min-width: $tablet-width) {
+        display: block;
+        padding-top: 27px;
     }
     
     @media (min-width: $desktop-width) {
         
     }
+}
+
+.page-footer__svg-mobile:hover {
+    fill: $PuertoRico;
+}
+
+.page-footer__svg-mobile:active {
+    opacity: 0.3;
 }
 
 // ГРИДЫ
 
 .page-footer {
-    grid-column: 2/-2;
+    grid-column: 1/-1;
 }

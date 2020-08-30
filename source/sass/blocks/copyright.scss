@@ -4,17 +4,16 @@
 
 .copyright {
     display: flex;
-    height: 80px;
     justify-content: center;
     align-items: center;
+    // padding-top: 20px;
     @media (min-width: $tablet-width) {
-        margin-top: 35px;
-        margin-left: 85px;
+        margin-top: -10px;
     }
     
     @media (min-width: $desktop-width) {
-        margin-top: 27px;
-        margin-left: 313px;
+        // margin-top: 27px;
+        // margin-left: 313px;
     }
 }
 
@@ -26,12 +25,14 @@
     line-height: 18px;
 }
 
-// width="27" height="34"
+.copyright__svg-logo {
+    fill: $Downy-1;
+}
 
-.copyright__link svg:hover {
+.copyright__svg-logo:hover {
     fill: $PuertoRico;
 }
 
-.copyright__link svg:active {
+.copyright__svg-logo:active {
     opacity: 0.3;
 }

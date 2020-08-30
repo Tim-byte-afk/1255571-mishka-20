@@ -23,12 +23,12 @@
     grid-template-rows: min-content 1fr min-content;
 
     @media (min-width: $tablet-width) {
-        grid-template-columns: 1fr 167px 167px 167px 167px 1fr;
+        grid-template-columns: 1fr repeat(4, 167px) 1fr;
         grid-template-rows: min-content 1fr min-content;
     }
     
     @media (min-width: $desktop-width) {
-        grid-template-columns: 1fr 175px 175px 175px 175px 175px 175px 1fr;
+        grid-template-columns: 1fr repeat(6, 175px) 1fr;
         grid-template-rows: min-content 1fr min-content;
     }
 }

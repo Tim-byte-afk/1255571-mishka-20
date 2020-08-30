@@ -2,12 +2,15 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins.scss';
 
+.page-main {
+    grid-column: 1/-1;
+}
+
 .page-main__title {
     margin: 0;
     padding: 0;
-    // height: 177px;
-    margin-left: -30px;
-    margin-right: -30px;
+    padding-top: 73px;
+    padding-bottom: 73px;
     background-color: $Seashell;
     display: flex;
     justify-content: center;
@@ -16,26 +19,20 @@
     font-weight: bold;
     font-size: 27px;
     line-height: 30px;
+    box-shadow: 0px -1px 0px $Gallery, inset 0px -1px 0px $Gallery;
     @media (min-width: $tablet-width) {
-        margin-left: -50px;
-        margin-right: -50px;
+        margin-top: -71px;
         margin-bottom: 21px;
         font-size: 43px;
         line-height: 50px;
-        padding-top: 99px;
-        padding-bottom: 75px;
+        padding-top: 100px;
+        padding-bottom: 76px;
     }
     
     @media (min-width: $desktop-width) {
         font-size: 53px;
         line-height: 57px;
-        padding-top: 91px;
+        padding-top: 102px;
         padding-bottom: 92px;
     }
-}
-
-// ГРИДЫ
-
-.page-main {
-    grid-column: 2/-2;
 }

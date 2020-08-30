@@ -4,13 +4,40 @@
 
 .reviews {
     position: relative;
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+    @media (min-width: $tablet-width) {
+        margin-top: 83px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        
+    }
 }
 
-.reviews::before {
+.reviews__container {
+    position: relative;
+    width: 260px;
+    @media (min-width: $tablet-width) {
+        width: 668px;
+        display: flex;
+        flex-direction: column;
+        padding: 83px 0px 47px 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    @media (min-width: $desktop-width) {
+        width: 1050px;
+    }
+}
+
+.reviews__container::before {
     @media (min-width: $tablet-width) {
         position: absolute;
         content: '';
-        top: -85px;
+        top: 0px;
         left: -50px;
         width: 350px;
         height: 457px;
@@ -19,7 +46,7 @@
     }
     
     @media (min-width: $desktop-width) {
-        top: -80px;
+        top: 0px;
         left: 0px;
     }
 }
@@ -54,13 +81,13 @@
     @media (min-width: $tablet-width) {
         margin: 0;
         position: absolute;
-        top: 272px;
+        top: 357px;
         left: 474px;
         width: 176px;
     }
     
     @media (min-width: $desktop-width) {
-        top: 227px;
+        top: 312px;
         left: 855px;
     }
 }
@@ -139,7 +166,7 @@
     @media (min-width: $tablet-width) {
         margin: 0;
         position: absolute;
-        top: -5px;
+        top: 80px;
         left: 493px;
         width: 120px;
         padding: 15px 14px 14px 38px;
@@ -147,7 +174,7 @@
     }
     
     @media (min-width: $desktop-width) {
-        top: 0px;
+        top: 82px;
         left: 875px;
     }
 }
