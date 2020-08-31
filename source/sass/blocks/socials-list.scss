@@ -8,21 +8,17 @@
     padding: 0;
     justify-content: flex-start;
     align-items: center;
-    height: 80px;
-    // outline: 5px solid rgba(255, 700, 0, 0.8);
-    // outline-offset: -5px;
-}
-
-.socials-list {
     list-style: none;
+    margin-top: -24px;
+    margin-left: -19px;
     @media (min-width: $tablet-width) {
-        margin-top: 35px;
-        margin-left: 225px;
+        margin-top: -6px;
+        margin-left: -40px;
     }
     
     @media (min-width: $desktop-width) {
-        margin-top: 29px;
-        margin-left: 376px;
+        // margin-top: 29px;
+        // margin-left: 376px;
     }
 }
 
@@ -30,9 +26,9 @@
     margin-left: 40px;
 }
 
-.socials-list__item:first-child {
-    margin-left: 87px;
-}
+// .socials-list__item:first-child {
+//     // margin-left: 87px;
+// }
 
 .socials-list__link svg:hover {
     fill: $PuertoRico;
@@ -41,3 +37,9 @@
 .socials-list__link svg:active {
     opacity: 0.3;
 }
+
+// .socials-list__svg-instagram {
+//     display: inline-block;
+//     width: 21.769px;
+//     height: 21.334px;
+// }

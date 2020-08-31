@@ -2,15 +2,15 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins.scss';
 
-.main-navigation {
-    // @media (min-width: $tablet-width) {
-    //     height: 89px;
-    // }
+// .main-navigation {
+//     // @media (min-width: $tablet-width) {
+//     //     height: 89px;
+//     // }
     
-    // @media (min-width: $desktop-width) {
-    //     height: 89px;
-    // }
-}
+//     // @media (min-width: $desktop-width) {
+//     //     height: 89px;
+//     // }
+// }
 
 .main-navigation__list--special {
     display: none;
@@ -53,4 +53,5 @@
 .main-navigation__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }

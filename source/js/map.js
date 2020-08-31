@@ -6,11 +6,6 @@ ymaps.ready(function () {
             searchControlProvider: 'yandex#search'
         }),
 
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
             hintContent: 'ул. Большая Конюшенная, д. 19/8, офис 101',
             balloonContent: 'ул. Большая Конюшенная, д. 19/8, офис 101'

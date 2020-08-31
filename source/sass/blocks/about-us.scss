@@ -3,13 +3,33 @@
 @import '../abstracts/mixins.scss';
 
 .about-us {
-    height: 1452 px;
+    // min-height: 1452px;
+    display: flex;
+    justify-content: center;
+    margin-top: 37px;
+    @media (min-width: $tablet-width) {
+        margin-top: 75px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-top: 111px;
+    }
+}
+
+.about-us__container {
+    width: 260px;
+    @media (min-width: $tablet-width) {
+        width: 668px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        width: 1050px;
+    }
 }
 
 .about-us__title {
     padding: 0;
     margin: 0;
-    margin-top: 73px;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -17,14 +37,14 @@
     @media (min-width: $tablet-width) {
         font-size: 43px;
         line-height: 50px;
-        margin-bottom: 15px;
+        padding-bottom: 14px;
     }
     
     @media (min-width: $desktop-width) {
         font-size: 53px;
         line-height: 57px;
-        margin-top: 110px;
-        margin-left: 175px;
+        padding-left: 175px;
+        padding-bottom: 15px;
     }
 }
 
