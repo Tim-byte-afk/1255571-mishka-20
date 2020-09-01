@@ -249,7 +249,25 @@
     }
 }
 
-.site-list__user-item:nth-child(2) .site-list__user-link::before {
+.site-list__user-item:nth-child(1) .site-list__user-link:hover::before {
+    background: url("../../img/icon-search-hover.svg") no-repeat;
+    opacity: 1;
+}
+
+.site-list__button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.site-list__button::before {
     content: "";
     position: absolute;
     top: 31px;
@@ -266,4 +284,14 @@
     @media (min-width: $desktop-width) {
         
     }
+}
+
+.site-list__button:hover::before {
+    background: url("../../img/icon-cart-hover.svg") no-repeat;
+    opacity: 1;
+}
+
+.site-list__button:active::before {
+    background: url("../../img/icon-cart-hover.svg") no-repeat;
+    opacity: 0.3;
 }

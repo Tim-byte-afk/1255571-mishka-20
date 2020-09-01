@@ -12,14 +12,26 @@
 //     // }
 // }
 
-.main-navigation__list--special {
-    display: none;
+.main-navigation__list {
     @media (min-width: $tablet-width) {
-        display: flex
+        z-index: 5;
     }
     
     @media (min-width: $desktop-width) {
-        display: flex
+        z-index: 5;
+    }
+}
+
+.main-navigation__list--special {
+    display: none;
+    @media (min-width: $tablet-width) {
+        display: flex;
+        z-index: 5;
+    }
+    
+    @media (min-width: $desktop-width) {
+        display: flex;
+        z-index: 5;
     }
 }
 
@@ -40,7 +52,7 @@
     position: absolute;
     width: 20px;
     height: 15px;
-    background: url("../../../img/icon-menu-open.svg") no-repeat;
+    background: url("../../img/icon-menu-open.svg") no-repeat;
     @media (min-width: $tablet-width) {
         display: none; 
     }

@@ -30,37 +30,37 @@
 .reviews-first__text {
     margin: 0;
     padding: 0;
-    padding-top: 14px;
+    margin-top: 14px;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
     @media (min-width: $tablet-width) {
         font-size: 17px;
-        padding-top: 39px;
+        margin-top: 39px;
     }
     
     @media (min-width: $desktop-width) {
-        padding-top: 35px;
+        margin-top: 35px;
     }
 }
 
 .reviews-first__signature {
     margin: 0;
     padding: 0;
-    padding-top: 33px;
+    margin-top: 33px;
     font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
     @media (min-width: $tablet-width) {
         font-size: 18px;
-        padding-top: 61px;
+        margin-top: 61px;
     }
     
     @media (min-width: $desktop-width) {
         font-size: 17px;
-        padding-top: 44px;
+        margin-top: 44px;
 
     }
 }
@@ -68,7 +68,7 @@
 .reviews-first__signature-id {
     margin: 0;
     padding: 0;
-    padding-top: 4px;
+    margin-top: 4px;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
