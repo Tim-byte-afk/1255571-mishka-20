@@ -267,7 +267,7 @@
     font-size: 17px;
     line-height: 18px;
     @media (min-width: $tablet-width) {
-        padding-left: 18px;
+        padding-left: 0px;
     }
     
     @media (min-width: $desktop-width) {
@@ -335,6 +335,10 @@
     }
 }
 
+.main-filter__input:focus+.main-filter__radio {
+    border: 2px solid $Downy-2;
+}
+
 .main-filter__checkbox {
     position: absolute;
     cursor: pointer;
@@ -387,6 +391,10 @@
     }
 }
 
+.main-filter__input:focus+.main-filter__checkbox {
+    border: 2px solid $Downy-2;
+}
+
 .main-filter__name-block {
     display: flex;
     flex-direction: column;
@@ -426,17 +434,24 @@
 }
 
 .main-filter__name-block .main-filter__input {
-    padding-top: 18px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 14px;
     width: 100%;
     border: none;
     box-shadow: inset 0px -2px 0px $Black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 18px;
     @media (min-width: $tablet-width) {
         // width: 70%;
+        padding-top: 18px;
         margin-left: 25px;
-        padding-bottom: 17px;
+        padding-bottom: 13px;
         display: flex;
         flex-grow: 1;
+        padding-left: 17px;
+        font-size: 19px;
     }
     
     @media (min-width: $desktop-width) {
@@ -444,11 +459,18 @@
     }
 }
 
+.main-filter__name-block .main-filter__input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 18px;
+}
+
 .main-filter__phone-block {
     position: relative;
     margin-bottom: 17px;
     @media (min-width: $tablet-width) {
-        margin-top: 62px;
+        margin-top: 59px;
         width: 74%;
     }
     
@@ -483,10 +505,16 @@
     width: 100%;
     padding-top: 3px;
     padding-bottom: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
     @media (min-width: $tablet-width) {
         display: flex;
         flex-grow: 1;
         background: $Seashell;
+        padding-left: 17px;
+        font-size: 19px;
     }
     
     @media (min-width: $desktop-width) {
@@ -498,7 +526,7 @@
     position: relative;
     margin-bottom: 18px;
     @media (min-width: $tablet-width) {
-        margin-top: 20px;
+        margin-top: 16px;
         margin-bottom: 53px;
         width: 74%;
     }
@@ -534,10 +562,16 @@
     width: 100%;
     padding-top: 6px;
     padding-bottom: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
     @media (min-width: $tablet-width) {
         display: flex;
         flex-grow: 1;
         background: $Seashell;
+        padding-left: 17px;
+        font-size: 19px;
     }
     
     @media (min-width: $desktop-width) {
@@ -562,9 +596,14 @@
     min-width: 260px;
     height: 142px;
     padding: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
     @media (min-width: $tablet-width) {
         min-width: 501px;
-        padding: 17px 17px 17px 0px;
+        padding: 17px 17px 17px 17px;
+        font-size: 19px;
     }
     
     @media (min-width: $desktop-width) {
@@ -624,6 +663,7 @@
     color: $Tundora;
     background: $White;
     text-transform: uppercase;
+    font-style: normal;
     font-weight: bold;
     font-size: 17px;
     line-height: 16px;
