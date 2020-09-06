@@ -23,6 +23,5 @@ ymaps.ready(function () {
         });
 
     myMap.geoObjects
-        .add(myPlacemark)
-        .add(myPlacemarkWithContent);
+        .add(myPlacemark);
 });

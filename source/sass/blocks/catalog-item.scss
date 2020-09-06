@@ -35,20 +35,20 @@
 .catalog-item__desc {
     padding: 0;
     margin: 0;
-    padding-top: 5px;
-    padding-bottom: 17px;
+    margin-top: 5px;
+    margin-bottom: 17px;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 30px;
     @media (min-width: $tablet-width) {
         font-size: 15px;
-        padding-top: 6px;
+        margin-top: 6px;
     }
     
     @media (min-width: $desktop-width) {
-        padding-bottom: 0px;
-        padding-top: 5px;
+        margin-bottom: 0px;
+        margin-top: 5px;
     }
 }
 
