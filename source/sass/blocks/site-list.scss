@@ -3,7 +3,6 @@
 @import '../abstracts/mixins.scss';
 
 .site-list {
-    // display: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,7 +30,6 @@
 }
 
 .site-list__user {
-    // display: none;
     margin: 0;
     padding: 0;
     display: flex;
@@ -66,7 +64,6 @@
     display: none;
     margin: 0;
     padding: 0;
-    // display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -106,10 +103,11 @@
 .site-list__user-item {
     position: relative;
     mix-blend-mode: normal;
-    // box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
+    box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
     @media (min-width: $tablet-width) {
         padding-top: 5px;
         padding-left: 3px;
+        box-shadow: 0px 0px 0px $Gallery, inset 0px 0px 0px $Gallery;
     }
     
     @media (min-width: $desktop-width) {
@@ -130,7 +128,6 @@
 .site-list__item--special {
     position: relative;
     mix-blend-mode: normal;
-    // box-shadow: 0px 1px 0px $Gallery, inset 0px 1px 0px $Gallery;
 }
 
 .site-list__item--special:not(:nth-child(3)) {
@@ -185,7 +182,7 @@
 }
 
 .site-list__user-item .site-list__user-link {
-    padding: 28px 55px 27px 77px;
+    padding: 28px 29px 27px 77px;
     display: block;
     @media (min-width: $tablet-width) {
         padding: 28px 22px 27px 79px;
@@ -214,8 +211,6 @@
 .site-list__user-link:visited,
 .site-list__link--special,
 .site-list__link--special:visited {
-    // padding: 29px 65px 26px 65px;
-    // width: 100%;
     color: $Black;
 }
 
@@ -254,7 +249,8 @@
     opacity: 1;
 }
 
-.site-list__button {
+.site-list__button,
+.site-list__button-catalog {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -267,7 +263,8 @@
     background-color: transparent;
 }
 
-.site-list__button::before {
+.site-list__button::before,
+.site-list__button-catalog::before {
     content: "";
     position: absolute;
     top: 31px;
@@ -286,12 +283,14 @@
     }
 }
 
-.site-list__button:hover::before {
+.site-list__button:hover::before,
+.site-list__button-catalog:hover::before {
     background: url("../../img/icon-cart-hover.svg") no-repeat;
     opacity: 1;
 }
 
-.site-list__button:active::before {
+.site-list__button:active::before,
+.site-list__button-catalog:active::before {
     background: url("../../img/icon-cart-hover.svg") no-repeat;
     opacity: 0.3;
 }
