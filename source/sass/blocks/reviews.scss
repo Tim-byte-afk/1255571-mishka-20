@@ -41,7 +41,18 @@
         left: -50px;
         width: 350px;
         height: 457px;
-        background: url("../../img/review@1x.jpg") no-repeat;
+        background: $Alabaster url("../../img/review@1x.jpg") no-repeat;
+        z-index: -2;
+    }
+
+    @media (min-width: $tablet-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: -50px;
+        width: 350px;
+        height: 457px;
+        background: $Alabaster url("../../img/review@2x.jpg") no-repeat;
         z-index: -2;
     }
     

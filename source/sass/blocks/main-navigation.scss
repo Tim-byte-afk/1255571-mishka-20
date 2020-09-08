@@ -85,6 +85,14 @@
     justify-content: space-between;
 }
 
+.main-navigation__toggle-hide {
+    display: none;
+}
+
+.main-navigation__toggle-show {
+    display: block;
+}
+
 .main-navigation__hide {
     display: none;
     @media (min-width: $tablet-width) {

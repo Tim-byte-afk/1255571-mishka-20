@@ -1,8 +1,10 @@
 // ЗАКРЫВАЕМ МЕНЮ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ, ЕСЛИ JS РАБОТАЕТ
+// ОТОБРАЖАЕМ КНОПКУ ОТКРЫТИЯ/ЗАКРЫТИЯ МЕНЮ, ЕСЛИ JS РАБОТАЕТ
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
     Menu.classList.toggle('main-navigation__hide');
+    ButtonMenu.classList.toggle('main-navigation__toggle-show');
 }
 
 // МАНИПУЛЯЦИИ С МЕНЮ
