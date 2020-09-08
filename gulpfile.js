@@ -79,7 +79,6 @@ const sprite = () => {
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"))
- 
 }
 
 exports.sprite = sprite;
@@ -114,7 +113,7 @@ const copy = () => {
     })
   .pipe(gulp.dest("build"));
 };
- 
+
 exports.copy = copy;
 
 // Del

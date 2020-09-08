@@ -1,0 +1,30 @@
+@import '../abstracts/functions.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+@import '../font.scss';
+
+.page-body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: $Black;
+    background-color: $White;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns:  1fr 130px 130px 1fr;
+    @media (min-width: $tablet-width) {
+        grid-template-columns: 1fr repeat(4, 167px) 1fr;
+        grid-template-rows: min-content 1fr min-content;
+    }
+    @media (min-width: $desktop-width) {
+        grid-template-columns: 1fr repeat(6, 175px) 1fr;
+        grid-template-rows: min-content 1fr min-content;
+    }
+}
+
+.page-body__visually-hidden {
+    @include VisuallyHidden;
+}

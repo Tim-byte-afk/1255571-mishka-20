@@ -6,19 +6,17 @@
     @media (min-width: $tablet-width) {
         z-index: 5;
     }
-    
     @media (min-width: $desktop-width) {
         z-index: 5;
     }
 }
 
-.main-navigation__list--special {
+.main-navigation__list-special {
     display: none;
     @media (min-width: $tablet-width) {
         display: flex;
         z-index: 5;
     }
-    
     @media (min-width: $desktop-width) {
         display: flex;
         z-index: 5;
@@ -44,9 +42,8 @@
     height: 15px;
     background: url("../../img/icon-menu-open.svg") no-repeat;
     @media (min-width: $tablet-width) {
-        display: none; 
+        display: none;
     }
-    
     @media (min-width: $desktop-width) {
         display: none;
     }
@@ -71,9 +68,8 @@
     height: 20px;
     background: url("../../img/icon-menu-close.svg") no-repeat;
     @media (min-width: $tablet-width) {
-        display: none; 
+        display: none;
     }
-    
     @media (min-width: $desktop-width) {
         display: none;
     }
@@ -100,7 +96,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
     @media (min-width: $desktop-width) {
         display: flex;
         flex-wrap: wrap;
