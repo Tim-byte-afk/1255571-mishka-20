@@ -12,28 +12,31 @@
     font-weight: bold;
     margin: 0;
     padding: 0;
-    background: $Alabaster url("/../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
+    background: $Alabaster url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
     box-shadow: 0px -1px 0px $Gallery, inset 0px -1px 0px $Gallery;
     @media
         (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
-            background: $Alabaster url("/../img/hero-mobile@2x.jpg") no-repeat 50% -18px;
+            background: $Alabaster url("../img/hero-mobile@2x.jpg") no-repeat 50% -18px;
+            background-size: 575px auto;
     }
     @media (min-width: $tablet-width) {
         margin-top: -71px;
-        background: $Alabaster url("../../img/hero-tablet@1x.jpg") no-repeat 50% 0;
-    }
-    @media (min-width: $tablet-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
-        margin-top: -71px;
-        background: $Alabaster url("../../img/hero-tablet@2x.jpg") no-repeat 50% 0;
+        background: $Alabaster url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+        @media (min-width: $tablet-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+            margin-top: -71px;
+            background: $Alabaster url("../img/hero-tablet@2x.jpg") no-repeat 50% 0;
+            background-size: 1150px auto;
+        }
     }
     @media (min-width: $desktop-width) {
         margin-top: -72px;
-        background: $Alabaster url("../../img/hero-desktop@1x.jpg") no-repeat 50% 0;
-    }
-    @media (min-width: $desktop-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
-        margin-top: -72px;
-        background: $Alabaster url("../../img/hero-desktop@2x.jpg") no-repeat 50% 0;
+        background: $Alabaster url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
+        @media (min-width: $desktop-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+            margin-top: -72px;
+            background: $Alabaster url("../img/hero-desktop@2x.jpg") no-repeat 50% 0;
+            background-size: 1150px auto;
+        }
     }
 }
 
@@ -41,7 +44,7 @@
     @media (min-width: $tablet-width) {
         position: absolute;
         content: '';
-        background-image: url('../../img/bg-zigzag-fill.svg');
+        background-image: url('../img/bg-zigzag-fill.svg');
         background-repeat: repeat-x;
         background-size: 768px;
         width: 768px;
@@ -171,7 +174,7 @@
     left: 244px;
     width: 60px;
     height: 65px;
-    background: url("../../../img/icon-interior.svg") no-repeat;
+    background: url("../img/icon-interior.svg") no-repeat;
     opacity: 0.5;
     @media (min-width: $tablet-width) {
         width: 60px;
@@ -221,7 +224,7 @@
     left: 233px;
     width: 60px;
     height: 60px;
-    background: url("../../../img/icon-toy.svg") no-repeat;
+    background: url("../img/icon-toy.svg") no-repeat;
     opacity: 0.5;
     @media (min-width: $tablet-width) {
         top: 30px;

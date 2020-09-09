@@ -3,11 +3,28 @@
 @import '../abstracts/mixins.scss';
 
 .copyright {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     @media (min-width: $tablet-width) {
         margin-top: -10px;
+    }
+}
+
+.copyright::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: 0;
+    width: 260px;
+    border-bottom: 1px solid $Silver-2;
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    
+    @media (min-width: $desktop-width) {
+        display: none;
     }
 }
 

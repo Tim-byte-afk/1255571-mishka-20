@@ -2,6 +2,9 @@
 @import '../abstracts/variables.scss';
 @import '../abstracts/mixins.scss';
 
+.catalog-item {
+    position: relative;
+}
 
 .catalog-item__topic {
     padding: 0;
@@ -67,32 +70,34 @@
     }
 }
 
-.catalog-item__value::before {
+.catalog-list__item .catalog-item__button {
     content: "";
     position: absolute;
-    top: 22px;
-    left: 185px;
+    top: 126px;
+    left: 213px;
     width: 20px;
     height: 19px;
-    background: url("../../../img/icon-cart.svg") no-repeat;
+    background: url("../img/icon-cart.svg") no-repeat;
     opacity: 0.2;
+    border: none;
     @media (min-width: $tablet-width) {
         width: 21px;
         height: 18px;
-        top: 20px;
-        left: 248px;
+        top: 285px;
+        left: 280px;
     }
     @media (min-width: $desktop-width) {
-        top: 20px;
-        left: 234px;
+        top: 146px;
+        left: 263px;
     }
 }
 
-.catalog-item__value:hover::before {
-    background: url("../../../img/icon-cart-hover.svg") no-repeat;
+.catalog-list__item:hover .catalog-item__button,
+.catalog-item__button:focus {
+    background: url("../img/icon-cart-hover.svg") no-repeat;
     opacity: 1;
 }
 
-.catalog-item__value:active::before {
+.catalog-list__item:active .catalog-item__button {
     opacity: 0.3;
 }

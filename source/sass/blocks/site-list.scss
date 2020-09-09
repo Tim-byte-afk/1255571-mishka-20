@@ -210,7 +210,7 @@
     left: 32px;
     width: 18px;
     height: 18px;
-    background: url("../../img/icon-search.svg") no-repeat;
+    background: url("../img/icon-search.svg") no-repeat;
     opacity: 0.2;
     @media (min-width: $tablet-width) {
         top: 35px;
@@ -218,7 +218,7 @@
 }
 
 .site-list__user-item:nth-child(1) .site-list__user-link:hover::before {
-    background: url("../../img/icon-search-hover.svg") no-repeat;
+    background: url("../img/icon-search-hover.svg") no-repeat;
     opacity: 1;
 }
 
@@ -244,7 +244,7 @@
     left: 31px;
     width: 21px;
     height: 18px;
-    background: url("../../img/icon-cart.svg") no-repeat;
+    background: url("../img/icon-cart.svg") no-repeat;
     opacity: 0.2;
     @media (min-width: $tablet-width) {
         top: 34px;
@@ -254,12 +254,12 @@
 
 .site-list__button:hover::before,
 .site-list__button-catalog:hover::before {
-    background: url("../../img/icon-cart-hover.svg") no-repeat;
+    background: url("../img/icon-cart-hover.svg") no-repeat;
     opacity: 1;
 }
 
 .site-list__button:active::before,
 .site-list__button-catalog:active::before {
-    background: url("../../img/icon-cart-hover.svg") no-repeat;
+    background: url("../img/icon-cart-hover.svg") no-repeat;
     opacity: 0.3;
 }

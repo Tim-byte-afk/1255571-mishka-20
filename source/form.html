@@ -5,6 +5,8 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
   <body class="page-body">
 
@@ -214,7 +216,7 @@
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle main-navigation__toggle-open main-navigation__toggle-hide" type="button" aria-label="Развернуть/свернуть меню"></button>
-        <div class="main-navigation__wrapper main-navigation__show site-list">
+        <div class="main-navigation__wrapper main-navigation__open site-list">
           <ul class="main-navigation__list site-list__main">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
@@ -385,7 +387,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__link">
+        <a class="page-footer__link"  href="index.html">
           <svg class="page-footer__svg-mobile" width="101px" height="35px">
             <use xlink:href="#html-logo-mobile"></use>
           </svg>

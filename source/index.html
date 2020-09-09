@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.min.css" rel="stylesheet">
 
-    <link rel="preload" href="/source/fonts/opensans.woff" as="font">
-    <link rel="preload" href="/source/fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=adb9761c-0177-44a3-9b7f-53058e907c06&lang=ru_RU"></script>
-    <script src="./js/map.js"></script>
+    <script src="js/map.js"></script>
   </head>
   <body class="page-body">
 
@@ -205,7 +205,7 @@
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle main-navigation__toggle-open main-navigation__toggle-hide" type="button" aria-label="Развернуть/свернуть меню"></button>
-        <div class="main-navigation__wrapper main-navigation__show site-list">
+        <div class="main-navigation__wrapper main-navigation__open site-list">
           <ul class="main-navigation__list site-list__main">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
@@ -292,8 +292,8 @@
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <source type="image/webp" srcset="/img/triple-set-mobile@1x.webp 1x, /img/triple-set-mobile@2x.webp 2x">
-              <img class="product-week__image" src="./img/triple-set-mobile@1x.jpg" srcset="/img/triple-set-mobile@1x.jpg 1x, /img/triple-set-mobile@2x.jpg 2x" alt="Товар недели">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              <img class="product-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x" alt="Товар недели">
             </picture>
             <p class="product-week__price">Цена: 990 руб.</p>
             <a class="product-week__link">Заказать</a>
@@ -374,7 +374,7 @@
               </li>
             </ul>
           </div>
-          <div class="contacts__map" id="map"></div>
+          <div class="contacts__map contacts__map-img" id="map"></div>
           <a class="contacts__link" href="">Напишите нам</a>
         </div>
       </section>
@@ -447,6 +447,6 @@
         </form>
       </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

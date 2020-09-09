@@ -10,7 +10,7 @@
     margin-top: 43px;
     margin-bottom: 39px;
     @media (min-width: $tablet-width) {
-        margin-top: 133px;
+        margin-top: 130px;
         margin-bottom: 57px;
     }
     @media (min-width: $desktop-width) {
@@ -68,11 +68,11 @@
     @media (min-width: $tablet-width) {
         position: absolute;
         content: "";
-        top: -21px;
+        top: 0px;
         left: 618px;
         width: 47px;
         height: 81px;
-        background: url("../../img/icon-flag.svg") no-repeat;
+        background: url("../img/icon-flag.svg") no-repeat;
     }
     @media (min-width: $desktop-width) {
         top: 115px;
@@ -148,13 +148,9 @@
 
 .contacts__item .contacts__item-link {
     color: $Tundora;
-    text-decoration: underline;
-    text-decoration-color: $Downy-2;
-    @media (min-width: $tablet-width) {
-        text-decoration: none;
-        border-bottom: 1px solid $Downy-2;
-        padding-bottom: 3px;
-    }
+    text-decoration: none;
+    border-bottom: 1px solid $Downy-2;
+    padding-bottom: 3px;
     @media (min-width: $desktop-width) {
         padding-bottom: 7px;
     }
@@ -162,13 +158,9 @@
 
 .contacts__item .contacts__item-link:hover {
     color: $PuertoRico;
-    text-decoration: underline;
-    text-decoration-color: $PuertoRico;
-    @media (min-width: $tablet-width) {
-        text-decoration: none;
-        border-bottom: 1px solid $PuertoRico;
-        padding-bottom: 3px;
-    }
+    text-decoration: none;
+    border-bottom: 1px solid $PuertoRico;
+    padding-bottom: 3px;
     @media (min-width: $desktop-width) {
         padding-bottom: 7px;
     }
@@ -176,13 +168,13 @@
 
 .contacts__item .contacts__item-link:active {
     color: $PuertoRico;
-    text-decoration: none;
+    border: none;
     @media (min-width: $tablet-width) {
         border: none;
     }
 }
 
-.contacts__map {
+.contacts__map-yandex {
     margin-top: 33px;
     width: 100%;
     height: 457px;
@@ -194,6 +186,60 @@
         margin-top: 71px;
         width: 527px;
         order: 3;
+    }
+}
+
+.contacts__map-img {
+    position: relative;
+    background: url("../img/map-mobile@1x.jpg") no-repeat;
+    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    height: 457px;
+    @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+            background: $Alabaster url("../img/map-mobile@2x.jpg") no-repeat;
+            background-size: 362px auto;
+    }
+    @media (min-width: $tablet-width) {
+        margin-top: 48px;
+        width: 767px;
+        background: $Alabaster url("../img/map-tablet@1x.jpg") no-repeat;
+        @media (min-width: $tablet-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+            background: $Alabaster url("../img/map-tablet@2x.jpg") no-repeat;
+            background-size: 767px auto;
+        }
+    }
+    @media (min-width: $desktop-width) {
+        margin-top: 71px;
+        width: 527px;
+        order: 3;
+        background: $Alabaster url("../img/map-desktop@1x.jpg") no-repeat;
+        @media (min-width: $desktop-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+            background: $Alabaster url("../img/map-desktop@2x.jpg") no-repeat;
+            background-size: 527px auto;
+        }
+    }
+}
+
+.contacts__map-img::before {
+    position: absolute;
+    content: "";
+    top: 145px;
+    left: 138px;
+    width: 67px;
+    height: 100px;
+    background: url("../img/icon-map-pin.svg");
+    @media (min-width: $tablet-width) {
+        top: 139px;
+        left: 363px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        top: 146px;
+        left: 239px;
     }
 }
 
