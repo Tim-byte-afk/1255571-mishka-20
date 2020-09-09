@@ -11,9 +11,6 @@
 }
 
 .page-modal__container {
-    // position: fixed;
-    // top: 50%;
-    // left: 50%;
     z-index: 100;
     display: block;
     box-sizing: border-box;
@@ -28,10 +25,6 @@
         margin: 20% auto;
         width: 566px;
         height: 336px;
-    }
-    
-    @media (min-width: $desktop-width) {
-        
     }
 }
 
@@ -54,19 +47,11 @@
         line-height: 57px;
         margin-top: 37px;
     }
-    
-    @media (min-width: $desktop-width) {
-        
-    }
 }
 
 .page-modal__visually-hidden {
     @media (min-width: $tablet-width) {
         display: none;
-    }
-    
-    @media (min-width: $desktop-width) {
-        
     }
 }
 
@@ -81,10 +66,6 @@
         font-size: 17px;
         margin-top: 11px;
     }
-    
-    @media (min-width: $desktop-width) {
-        
-    }
 }
 
 .field-size {
@@ -97,10 +78,6 @@
     @media (min-width: $tablet-width) {
         margin-top: 32px;
     }
-    
-    @media (min-width: $desktop-width) {
-        
-    }
 }
 
 .field-size__label {
@@ -112,10 +89,6 @@
         line-height: 16px;
         margin-right: 78px;
         margin-left: 12px;
-    }
-    
-    @media (min-width: $desktop-width) {
-        
     }
 }
 
@@ -136,15 +109,10 @@
     top: -16px;
     border: 2px solid $Tundora;
     opacity: 0.1;
-    // margin-right: 110px;
     @media (min-width: $tablet-width) {
         left: -52px;
         width: 107px;
         height: 48px;
-    }
-    
-    @media (min-width: $desktop-width) {
-        // top: -20px;
     }
 }
 
@@ -175,10 +143,6 @@
     padding: 20px 82px 16px 82px;
     @media (min-width: $tablet-width) {
         padding: 24px 128px 12px 128px;
-    }
-    
-    @media (min-width: $desktop-width) {
-        
     }
 }
 

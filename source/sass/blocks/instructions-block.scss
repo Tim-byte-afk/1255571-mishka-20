@@ -10,7 +10,6 @@
     @media (min-width: $tablet-width) {
         margin-top: 53px;
     }
-    
     @media (min-width: $desktop-width) {
         margin-top: 53px;
         min-height: 455px;
@@ -29,7 +28,6 @@
     @media (min-width: $tablet-width) {
         width: 668px;
     }
-    
     @media (min-width: $desktop-width) {
         width: 1050px;
         display: flex;
@@ -81,7 +79,6 @@
         padding-left: 107px;
         padding-bottom: 0px;
     }
-    
     @media (min-width: $desktop-width) {
         margin: 0;
         padding: 0px;
@@ -95,12 +92,11 @@
     left: 35px;
     width: 32px;
     height: 32px;
-    background: url("../../img/icon-video.svg") no-repeat;
+    background: url("../img/icon-video.svg") no-repeat;
     @media (min-width: $tablet-width) {
         top: 35px;
         left: 40px;
     }
-    
     @media (min-width: $desktop-width) {
         top: -53px;
         left: 0px;
@@ -111,7 +107,6 @@
     @media (min-width: $tablet-width) {
         display: none;
     }
-    
     @media (min-width: $desktop-width) {
         display: block;
     }
@@ -122,21 +117,34 @@
     position: relative;
     width: 260px;
     height: 150px;
-    background: url("../../img/video-mobile@1x.jpg");
+    background: $Alabaster url("../img/video-mobile@1x.jpg");
+    @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+            background: $Alabaster url("../img/video-mobile@2x.jpg");
+            background-size: 260px auto;
+    }
     @media (min-width: $tablet-width) {
         order: 1;
         width: 668px;
         height: 455px;
-        background: url("../../img/video-tablet@1x.jpg");
+        background: $Alabaster url("../img/video-tablet@1x.jpg");
+        @media (min-width: $tablet-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+            background: $Alabaster url("../img/video-tablet@2x.jpg");
+            background-size: 668px auto;
+        }
     }
-    
     @media (min-width: $desktop-width) {
         position: absolute;
         width: 683px;
         height: 455px;
         top: 0px;
         left: 0px;
-        background: url("../../img/video-desktop@1x.jpg");
+        background: $Alabaster url("../img/video-desktop@1x.jpg");
+        @media (min-width: $desktop-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+            background: $Alabaster url("../img/video-desktop@2x.jpg");
+            background-size: 682px auto;
+        }
     }
 }
 
@@ -156,27 +164,26 @@
     position: absolute;
     width: 130px;
     height: 95px;
-    background: url("../../img/icon-play.svg") no-repeat;
+    background: url("../img/icon-play.svg") no-repeat;
     background-size: 100px 77px;
     @media (min-width: $tablet-width) {
         background-size: 102px 78px;
         top: 155px;
         left: 208px;
     }
-    
     @media (min-width: $desktop-width) {
         top: 155px;
         left: 217px;
     }
 }
 
-.instructions-block__play-video:hover::before {
+.instructions-block__play-video:hover::before,
+.instructions-block__play-video:focus::before {
     @media (min-width: $tablet-width) {
         background-size: 121px 92px;
         top: 145px;
         left: 207px;
     }
-
     @media (min-width: $desktop-width) {
         background-size: 121px 92px;
         top: 145px;
@@ -190,7 +197,6 @@
         top: 165px;
         left: 227px;
     }
-
     @media (min-width: $desktop-width) {
         background-size: 81px 62px;
         top: 165px;
@@ -214,7 +220,6 @@
         margin-left: 40px;
         margin-right: 10px;
     }
-    
     @media (min-width: $desktop-width) {
         margin: 0;
         padding: 0px;
@@ -247,7 +252,6 @@
         padding: 16px 220px 15px 222px;
         margin-bottom: 51px;
     }
-    
     @media (min-width: $desktop-width) {
         position: absolute;
         top: 303px;
@@ -267,3 +271,4 @@
 .instructions-block__link:active {
     @include BtnActive;
 }
+

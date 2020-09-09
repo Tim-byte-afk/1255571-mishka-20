@@ -3,6 +3,7 @@
 
 @import 'blocks/page-modal.scss';
 @import 'blocks/page-main.scss';
+@import 'blocks/page-body.scss';
 @import 'blocks/page-header.scss';
 @import 'blocks/page-footer.scss';
 
@@ -36,9 +37,9 @@ a {
 }
 
 @media (min-width: $tablet-width) {
-        
+
 }
 
 @media (min-width: $desktop-width) {
-    
+
 }

@@ -1,8 +1,13 @@
 // ЗАКРЫВАЕМ МЕНЮ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ, ЕСЛИ JS РАБОТАЕТ
-document.addEventListener("DOMContentLoaded", ready);
+// ОТОБРАЖАЕМ КНОПКУ ОТКРЫТИЯ/ЗАКРЫТИЯ МЕНЮ, ЕСЛИ JS РАБОТАЕТ
+document.addEventListener('DOMContentLoaded', ready);
+let MapSite = document.querySelector('.contacts__map');
 
 function ready() {
     Menu.classList.toggle('main-navigation__hide');
+    ButtonMenu.classList.toggle('main-navigation__toggle-show');
+    MapSite.classList.remove('contacts__map-img');
+    MapSite.classList.toggle('contacts__map-yandex');
 }
 
 // МАНИПУЛЯЦИИ С МЕНЮ
