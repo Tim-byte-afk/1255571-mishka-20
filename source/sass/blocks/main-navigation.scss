@@ -1,110 +1,120 @@
-@import '../abstracts/functions.scss';
-@import '../abstracts/variables.scss';
-@import '../abstracts/mixins.scss';
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .main-navigation__list {
-    @media (min-width: $tablet-width) {
-        z-index: 5;
-    }
-    @media (min-width: $desktop-width) {
-        z-index: 5;
-    }
+  @media (min-width: $tablet-width) {
+    z-index: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 5;
+  }
 }
 
 .main-navigation__list-special {
-    display: none;
-    @media (min-width: $tablet-width) {
-        display: flex;
-        z-index: 5;
-    }
-    @media (min-width: $desktop-width) {
-        display: flex;
-        z-index: 5;
-    }
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    z-index: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    z-index: 5;
+  }
 }
 
 .main-navigation__toggle-open {
-    position: absolute;
-    top: 31px;
-    margin-left: 234px;
-    align-self: flex-end;
-    font-size: 0;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    background-color: transparent;
+  position: absolute;
+  top: 31px;
+  margin-left: 234px;
+  align-self: flex-end;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .main-navigation__toggle-open::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 15px;
-    background: url("../img/icon-menu-open.svg") no-repeat;
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
-    @media (min-width: $desktop-width) {
-        display: none;
-    }
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background: url("../img/icon-menu-open.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-navigation__toggle-close {
-    position: absolute;
-    top: 28px;
-    margin-left: 232px;
-    align-self: flex-end;
-    font-size: 0;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    background-color: transparent;
+  position: absolute;
+  top: 28px;
+  margin-left: 232px;
+  align-self: flex-end;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .main-navigation__toggle-close::before {
-    content: "";
-    position: absolute;
-    width: 21px;
-    height: 20px;
-    background: url("../img/icon-menu-close.svg") no-repeat;
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
-    @media (min-width: $desktop-width) {
-        display: none;
-    }
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 20px;
+  background: url("../img/icon-menu-close.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-navigation__toggle-hide {
-    display: none;
+  display: none;
 }
 
 .main-navigation__toggle-show {
-    display: block;
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
-    @media (min-width: $desktop-width) {
-        display: none;
-    }
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-navigation__open {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main-navigation__hide {
-    display: none;
-    @media (min-width: $tablet-width) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    @media (min-width: $desktop-width) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

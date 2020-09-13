@@ -205,7 +205,7 @@
     </svg>
 
     <header class="page-header">
-      <a href="index.html" class="page-header__logo-link">
+      <a href="index.html" class="page-header__logo-link" aria-label="site Mishka">
         <picture class="page-header__logo-options">
           <source class="page-header__logo" media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source class="page-header__logo" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -294,32 +294,32 @@
                     <p class="main-filter__text">Цвет</p>
                     <div class="main-filter__board main-filter__checkbox-block">
                         <label class="main-filter__label">
-                            <input class="main-filter__input" type="checkbox" checked>
+                            <input class="main-filter__input" type="checkbox" name="checkbox" checked>
                             <span class="main-filter__checkbox"></span>
                             Белый
                         </label>
                         <label class="main-filter__label">
-                            <input class="main-filter__input" type="checkbox" checked>
+                            <input class="main-filter__input" type="checkbox" name="checkbox" checked>
                             <span class="main-filter__checkbox"></span>
                             Серый
                         </label>
                         <label class="main-filter__label">
-                            <input class="main-filter__input" type="checkbox">
+                            <input class="main-filter__input" type="checkbox" name="checkbox">
                             <span class="main-filter__checkbox"></span>
                             «Тиффани»
                         </label>
                         <label class="main-filter__label">
-                            <input class="main-filter__input" type="checkbox">
+                            <input class="main-filter__input" type="checkbox" name="checkbox">
                             <span class="main-filter__checkbox"></span>
                             Черный
                         </label>
                         <label class="main-filter__label">
-                            <input class="main-filter__input" type="checkbox">
+                            <input class="main-filter__input" type="checkbox" name="checkbox">
                             <span class="main-filter__checkbox"></span>
                             Розовый
                         </label>
                         <label class="main-filter__label">
-                            <input class="main-filter__input" type="checkbox">
+                            <input class="main-filter__input" type="checkbox" name="checkbox">
                             <span class="main-filter__checkbox"></span>
                             Оранжевый
                         </label>
@@ -332,15 +332,15 @@
                     <div class="main-filter__board main-filter__name-block">
                         <label class="main-filter__label">
                             Имя:
-                            <input required class="main-filter__input" type="text" placeholder="Введите ваше имя*">
+                            <input required class="main-filter__input" type="text" name="name" placeholder="Введите ваше имя*">
                         </label>
                         <label class="main-filter__label">
                             Фамилия:
-                            <input required class="main-filter__input" type="text" placeholder="Укажите фамилию*">
+                            <input required class="main-filter__input" type="text" name="surname" placeholder="Укажите фамилию*">
                         </label>
                         <label class="main-filter__label">
                             Отчество:
-                            <input class="main-filter__input" type="text" placeholder="Отчество, если желаете">
+                            <input class="main-filter__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
                         </label>
                     </div>
                   </div>
@@ -351,9 +351,9 @@
                     <p class="main-filter__text">Тел</p>
                     <div class="main-filter__board main-filter__phone-block">
                         <label class="main-filter__label">
-                            <input required class="main-filter__input" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                            <input required class="main-filter__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
                         </label>
-                        <svg class="main-filter__svg-phone" width="21.09px" height="22.32px">
+                        <svg class="main-filter__svg-phone" width="21" height="22">
                           <use xlink:href="#phone"></use>
                         </svg>
                     </div>
@@ -362,7 +362,7 @@
                         <label class="main-filter__label">
                             <input required class="main-filter__input" type="email" name="user-email" placeholder="Ваш Email*">
                         </label>
-                        <svg class="main-filter__svg-mail" width="42px" height="31px">
+                        <svg class="main-filter__svg-mail" width="42" height="31">
                           <use xlink:href="#mail"></use>
                         </svg>
                     </div>
@@ -373,7 +373,7 @@
                     <p class="main-filter__text">Доп</p>
                     <div class="main-filter__board main-filter__extra-block">
                         <label class="main-filter__label">
-                            <textarea class="main-filter__input" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                            <textarea class="main-filter__input" rows="8" name="extra-info" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                         </label>
                     </div>
                   </div>
@@ -387,29 +387,29 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__container">
-        <a class="page-footer__link"  href="index.html">
-          <svg class="page-footer__svg-mobile" width="101px" height="35px">
+        <a class="page-footer__link">
+          <svg class="page-footer__svg-mobile" width="101" height="35">
             <use xlink:href="#html-logo-mobile"></use>
           </svg>
         </a>
         <ul class="socials-list">
           <li class="socials-list__item">
             <a class="socials-list__link" href="" aria-label="link to instagram">
-              <svg class="socials-list__svg-instagram" width="21.769px" height="21.334px">
+              <svg class="socials-list__svg-instagram" width="22" height="21">
                 <use xlink:href="#insta"></use>
               </svg>
             </a>
           </li>
           <li class="socials-list__item">
               <a class="socials-list__link" href="" aria-label="link to fb">
-                <svg class="socials-list__svg-fb" width="14.962px" height="27.718px">
+                <svg class="socials-list__svg-fb" width="15" height="28">
                   <use xlink:href="#fb"></use>
                 </svg>
               </a>
           </li>
           <li class="socials-list__item">
               <a class="socials-list__link" href="" aria-label="link to twitter">
-                <svg class="socials-list__svg-twitter" width="23.494px" height="20.168px">
+                <svg class="socials-list__svg-twitter" width="24" height="20">
                   <use xlink:href="#twitter"></use>
                 </svg>
               </a>
@@ -417,8 +417,8 @@
         </ul>
         <div class="copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="copyright__svg-logo" width="26.943px" height="34.09px">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="link to site HTML Academy">
+              <svg class="copyright__svg-logo" width="27" height="34">
                 <use xlink:href="#html-logo-footer"></use>
               </svg>
             </a>

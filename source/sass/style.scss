@@ -1,45 +1,30 @@
-
-@import 'blocks/page.scss';
-
-@import 'blocks/page-modal.scss';
-@import 'blocks/page-main.scss';
-@import 'blocks/page-body.scss';
-@import 'blocks/page-header.scss';
-@import 'blocks/page-footer.scss';
-
-@import 'blocks/main-navigation.scss';
-@import 'blocks/site-list.scss';
-
-@import 'blocks/socials-list.scss';
-@import 'blocks/copyright.scss';
-
-@import 'blocks/about-us.scss';
-@import 'blocks/catalog.scss';
-@import 'blocks/catalog-list.scss';
-@import 'blocks/catalog-item.scss';
-@import 'blocks/contacts.scss';
-@import 'blocks/header-block.scss';
-@import 'blocks/instructions-block.scss';
-@import 'blocks/main-filter.scss';
-@import 'blocks/product-week.scss';
-@import 'blocks/reviews.scss';
-@import 'blocks/reviews-first.scss';
-
-
+@import "blocks/page.scss";
+@import "blocks/page-modal.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/site-list.scss";
+@import "blocks/socials-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/about-us.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-list.scss";
+@import "blocks/catalog-item.scss";
+@import "blocks/contacts.scss";
+@import "blocks/header-block.scss";
+@import "blocks/instructions-block.scss";
+@import "blocks/main-filter.scss";
+@import "blocks/product-week.scss";
+@import "blocks/reviews.scss";
+@import "blocks/reviews-first.scss";
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
-}
-
-@media (min-width: $tablet-width) {
-
-}
-
-@media (min-width: $desktop-width) {
-
+  text-decoration: none;
 }

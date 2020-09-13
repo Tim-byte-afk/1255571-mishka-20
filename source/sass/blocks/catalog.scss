@@ -1,18 +1,19 @@
-@import '../abstracts/functions.scss';
-@import '../abstracts/variables.scss';
-@import '../abstracts/mixins.scss';
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .catalog {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .catalog__container {
-    width: 260px;
-    @media (min-width: $tablet-width) {
-        width: 668px;
-    }
-    @media (min-width: $desktop-width) {
-        width: 1050px;
-    }
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
 }

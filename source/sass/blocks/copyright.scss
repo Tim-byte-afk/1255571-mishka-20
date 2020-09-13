@@ -1,49 +1,50 @@
-@import '../abstracts/functions.scss';
-@import '../abstracts/variables.scss';
-@import '../abstracts/mixins.scss';
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .copyright {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (min-width: $tablet-width) {
-        margin-top: -10px;
-    }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+  }
 }
 
 .copyright::before {
-    position: absolute;
-    content: "";
-    top: -12px;
-    left: 0;
-    width: 260px;
-    border-bottom: 1px solid $Silver-2;
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
-    
-    @media (min-width: $desktop-width) {
-        display: none;
-    }
+  position: absolute;
+  content: "";
+  top: -12px;
+  left: 0;
+  width: 260px;
+  border-bottom: 1px solid $Silver-2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .copyright__text {
-    margin-right: 27px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 18px;
+  margin-right: 27px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
 }
 
 .copyright__svg-logo {
-    fill: $Downy-1;
+  fill: $Downy-1;
 }
 
 .copyright__svg-logo:hover {
-    fill: $PuertoRico;
+  fill: $PuertoRico;
 }
 
 .copyright__svg-logo:active {
-    opacity: 0.3;
+  opacity: 0.3;
 }
