@@ -1,61 +1,59 @@
-@import '../abstracts/functions.scss';
-@import '../abstracts/variables.scss';
-@import '../abstracts/mixins.scss';
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .page-footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    min-height: 160px;
-    background: $Seashell;
-    @media (min-width: $tablet-width) {
-        flex-direction: row;
-        min-height: 143px;
-    }
+  grid-column: 1/-1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 160px;
+  background: $Seashell;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 143px;
+  }
 }
 
 .page-footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
-    min-height: 100px;
-    margin-top: 33px;
-    @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 668px;
-        margin-top: 0px;
-    }
-    @media (min-width: $desktop-width) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 1050px;
-    }
+    width: 668px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1050px;
+  }
 }
 
 .page-footer__link {
-    display: none;
-    @media (min-width: $tablet-width) {
-        display: block;
-        padding-top: 27px;
-    }
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 27px;
+  }
 }
 
 .page-footer__svg-mobile:hover {
-    fill: $PuertoRico;
+  fill: $PuertoRico;
 }
 
 .page-footer__svg-mobile:active {
-    opacity: 0.3;
-}
-
-// ГРИДЫ
-
-.page-footer {
-    grid-column: 1/-1;
+  opacity: 0.3;
 }

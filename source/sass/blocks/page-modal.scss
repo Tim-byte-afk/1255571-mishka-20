@@ -1,152 +1,156 @@
-@import '../abstracts/functions.scss';
-@import '../abstracts/variables.scss';
-@import '../abstracts/mixins.scss';
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .page-modal {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: $AlmostWhite;
-    z-index: 50;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $AlmostWhite;
+  z-index: 50;
 }
 
 .page-modal__container {
-    z-index: 100;
-    display: block;
-    box-sizing: border-box;
-    margin: 50% auto;
-    width: 100%;
+  z-index: 100;
+  display: block;
+  box-sizing: border-box;
+  margin: 50% auto;
+  width: 100%;
+  height: 336px;
+  background: $White;
+  border: 1px solid $Silver;
+  box-shadow: 0 5px 10px $LitleBlack;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 20% auto;
+    width: 566px;
     height: 336px;
-    background: $White;
-    border: 1px solid $Silver;
-    box-shadow: 0px 5px 10px $LitleBlack;
-    text-align: center;
-    @media (min-width: $tablet-width) {
-        margin: 20% auto;
-        width: 566px;
-        height: 336px;
-    }
+  }
 }
 
 .page-modal__hide {
-    display: none;
+  display: none;
 }
 
 .page-modal__show {
-    display: block;
+  display: block;
 }
 
 .page-modal__title {
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin-bottom: 0;
-    @media (min-width: $tablet-width) {
-        font-size: 30px;
-        line-height: 57px;
-        margin-top: 37px;
-    }
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-top: 37px;
+  }
 }
 
 .page-modal__visually-hidden {
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-modal__subtitle {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 30px;
-    margin-top: 14px;
-    margin-bottom: 0;
-    @media (min-width: $tablet-width) {
-        font-size: 17px;
-        margin-top: 11px;
-    }
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  margin-top: 14px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-top: 11px;
+  }
 }
 
 .field-size {
-    border: none;
+  border: none;
 }
 
 .field-size__board {
-    margin-top: 35px;
-    margin-bottom: 35px;
-    @media (min-width: $tablet-width) {
-        margin-top: 32px;
-    }
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
 }
 
 .field-size__label {
-    position: relative;
-    margin-right: 50px;
+  position: relative;
+  margin-right: 50px;
+  margin-left: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 16px;
+    margin-right: 78px;
     margin-left: 12px;
-    @media (min-width: $tablet-width) {
-        font-size: 17px;
-        line-height: 16px;
-        margin-right: 78px;
-        margin-left: 12px;
-    }
+  }
 }
 
 .field-size__label:nth-last-child(1) {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .field-size__checkbox {
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    position: absolute;
-    cursor: pointer;
-    content: "";
-    width: 78px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  position: absolute;
+  cursor: pointer;
+  content: "";
+  width: 78px;
+  height: 48px;
+  left: -38px;
+  top: -16px;
+  border: 2px solid $Tundora;
+  opacity: 0.1;
+
+  @media (min-width: $tablet-width) {
+    left: -52px;
+    width: 107px;
     height: 48px;
-    left: -38px;
-    top: -16px;
-    border: 2px solid $Tundora;
-    opacity: 0.1;
-    @media (min-width: $tablet-width) {
-        left: -52px;
-        width: 107px;
-        height: 48px;
-    }
+  }
 }
 
 .field-size__checkbox:hover {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .field-size__input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  appearance: none;
 }
 
-.field-size__input:checked+.field-size__checkbox {
-    border: 2px solid $Downy-2;
-    opacity: 1;
+.field-size__input:checked + .field-size__checkbox {
+  border: 2px solid $Downy-2;
+  opacity: 1;
 }
 
 .page-modal__button {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 16px;
-    text-transform: uppercase;
-    background: $Downy-1;
-    color: $White;
-    border: none;
-    padding: 20px 82px 16px 82px;
-    @media (min-width: $tablet-width) {
-        padding: 24px 128px 12px 128px;
-    }
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background: $Downy-1;
+  color: $White;
+  border: none;
+  padding: 20px 82px 16px 82px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 128px 12px 128px;
+  }
 }
 
 .page-modal__button:hover,
 .page-modal__button:active {
-    background: $Viking;
+  background: $Viking;
 }

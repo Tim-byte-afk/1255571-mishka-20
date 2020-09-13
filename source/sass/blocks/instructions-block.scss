@@ -1,274 +1,294 @@
-@import '../abstracts/functions.scss';
-@import '../abstracts/variables.scss';
-@import '../abstracts/mixins.scss';
+@import "../abstracts/variables.scss";
+@import "../abstracts/mixins.scss";
 
 .instructions-block {
-    margin-top: 30px;
-    margin-bottom: 59px;
-    display: flex;
-    justify-content: center;
-    @media (min-width: $tablet-width) {
-        margin-top: 53px;
-    }
-    @media (min-width: $desktop-width) {
-        margin-top: 53px;
-        min-height: 455px;
-        margin-bottom: 105px;
-    }
+  margin-top: 30px;
+  margin-bottom: 59px;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 53px;
+    min-height: 455px;
+    margin-bottom: 105px;
+  }
 }
 
 .instructions-block__container {
-    position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #ececec;
+  width: 258px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    border: 1px solid #ECECEC;
-    width: 258px;
-    @media (min-width: $tablet-width) {
-        width: 668px;
-    }
-    @media (min-width: $desktop-width) {
-        width: 1050px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-end;
-    }
+    align-items: flex-end;
+  }
 }
 
 .instructions-block__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 251px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    @media (min-width: $tablet-width) {
-        width: 668px;
-    }
-    @media (min-width: $desktop-width) {
-        width: 251px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding: 96px 36px 60px 80px;
-    }
+    padding: 96px 36px 60px 80px;
+  }
 }
 
 .instructions-block__container:hover {
-    box-shadow: 0px 6px 10px $blackRgba;
+  box-shadow: 0 6px 10px $blackRgba;
 }
 
 .instructions-block__container:active {
-    box-shadow: 0px 3px 5px $blackRgba;
+  box-shadow: 0 3px 5px $blackRgba;
 }
 
 .instructions-block__title {
-    order: 1;
-    position: relative;
+  order: 1;
+  position: relative;
+  margin: 0;
+  padding: 21px 5px 26px 91px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    font-size: 20px;
+    padding-top: 41px;
+    padding-left: 107px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 21px 5px 26px 91px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
-    @media (min-width: $tablet-width) {
-        order: 2;
-        font-size: 20px;
-        padding-top: 41px;
-        padding-left: 107px;
-        padding-bottom: 0px;
-    }
-    @media (min-width: $desktop-width) {
-        margin: 0;
-        padding: 0px;
-    }
+    padding: 0;
+  }
 }
 
 .instructions-block__title::before {
-    content: "";
-    position: absolute;
-    top: 27px;
-    left: 35px;
-    width: 32px;
-    height: 32px;
-    background: url("../img/icon-video.svg") no-repeat;
-    @media (min-width: $tablet-width) {
-        top: 35px;
-        left: 40px;
-    }
-    @media (min-width: $desktop-width) {
-        top: -53px;
-        left: 0px;
-    }
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 35px;
+  width: 32px;
+  height: 32px;
+  background: url("../img/icon-video.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+    left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -53px;
+    left: 0;
+  }
 }
 
 .instructions-block__visually-hidden {
-    @media (min-width: $tablet-width) {
-        display: none;
-    }
-    @media (min-width: $desktop-width) {
-        display: block;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .instructions-block__video {
-    order: 2;
-    position: relative;
-    width: 260px;
-    height: 150px;
-    background: $Alabaster url("../img/video-mobile@1x.jpg");
-    @media
-        (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
-            background: $Alabaster url("../img/video-mobile@2x.jpg");
-            background-size: 260px auto;
+  order: 2;
+  position: relative;
+  width: 260px;
+  height: 150px;
+  background: $Alabaster url("../img/video-mobile@1x.jpg");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: $Alabaster url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 668px;
+    height: 455px;
+    background: $Alabaster url("../img/video-tablet@1x.jpg");
+
+    @media (min-width: $tablet-width) and (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      background: $Alabaster url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
     }
-    @media (min-width: $tablet-width) {
-        order: 1;
-        width: 668px;
-        height: 455px;
-        background: $Alabaster url("../img/video-tablet@1x.jpg");
-        @media (min-width: $tablet-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
-            background: $Alabaster url("../img/video-tablet@2x.jpg");
-            background-size: 668px auto;
-        }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 683px;
+    height: 455px;
+    top: 0;
+    left: 0;
+    background: $Alabaster url("../img/video-desktop@1x.jpg");
+
+    @media (min-width: $desktop-width) and (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      background: $Alabaster url("../img/video-desktop@2x.jpg");
+      background-size: 682px auto;
     }
-    @media (min-width: $desktop-width) {
-        position: absolute;
-        width: 683px;
-        height: 455px;
-        top: 0px;
-        left: 0px;
-        background: $Alabaster url("../img/video-desktop@1x.jpg");
-        @media (min-width: $desktop-width) and (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
-            background: $Alabaster url("../img/video-desktop@2x.jpg");
-            background-size: 682px auto;
-        }
-    }
+  }
 }
 
 .instructions-block__play-video {
-    position: absolute;
-    top: 35px;
-    left: 74px;
-    font-size: 0;
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    background-color: transparent;
+  position: absolute;
+  top: 35px;
+  left: 74px;
+  font-size: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .instructions-block__play-video::before {
-    content: "";
-    position: absolute;
-    width: 130px;
-    height: 95px;
-    background: url("../img/icon-play.svg") no-repeat;
-    background-size: 100px 77px;
-    @media (min-width: $tablet-width) {
-        background-size: 102px 78px;
-        top: 155px;
-        left: 208px;
-    }
-    @media (min-width: $desktop-width) {
-        top: 155px;
-        left: 217px;
-    }
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 95px;
+  background: url("../img/icon-play.svg") no-repeat;
+  background-size: 100px 77px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 102px 78px;
+    top: 155px;
+    left: 208px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 155px;
+    left: 217px;
+  }
 }
 
 .instructions-block__play-video:hover::before,
 .instructions-block__play-video:focus::before {
-    @media (min-width: $tablet-width) {
-        background-size: 121px 92px;
-        top: 145px;
-        left: 207px;
-    }
-    @media (min-width: $desktop-width) {
-        background-size: 121px 92px;
-        top: 145px;
-        left: 207px;
-    }
+  @media (min-width: $tablet-width) {
+    background-size: 121px 92px;
+    top: 145px;
+    left: 207px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 121px 92px;
+    top: 145px;
+    left: 207px;
+  }
 }
 
 .instructions-block__play-video:active::before {
-    @media (min-width: $tablet-width) {
-        background-size: 81px 62px;
-        top: 165px;
-        left: 227px;
-    }
-    @media (min-width: $desktop-width) {
-        background-size: 81px 62px;
-        top: 165px;
-        left: 227px;
-    }
+  @media (min-width: $tablet-width) {
+    background-size: 81px 62px;
+    top: 165px;
+    left: 227px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 81px 62px;
+    top: 165px;
+    left: 227px;
+  }
 }
 
 .instructions-block__desc {
-    order: 3;
+  order: 3;
+  margin: 35px 5px 0 34px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0;
-    margin: 35px 5px 0px 34px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 24px;
-    @media (min-width: $tablet-width) {
-        order: 2;
-        font-size: 15px;
-        line-height: 30px;
-        margin-top: 25px;
-        margin-left: 40px;
-        margin-right: 10px;
-    }
-    @media (min-width: $desktop-width) {
-        margin: 0;
-        padding: 0px;
-        margin-top: 27px;
-    }
+    padding: 0;
+    margin-top: 27px;
+  }
 }
 
 .instructions-block__link,
 .instructions-block__link:visited {
-    order: 4;
-    padding: 0;
-    margin: 0;
-    margin-top: 40px;
-    margin-left: 34px;
-    margin-right: 32px;
-    margin-bottom: 33px;
-    display: block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 16px;
-    padding: 16px 21px 15px 19px;
-    text-transform: uppercase;
-    border: 2px solid $Tundora;
-    color: $Tundora;
-    @media (min-width: $tablet-width) {
-        font-size: 17px;
-        order: 2;
-        margin-left: 40px;
-        padding: 16px 220px 15px 222px;
-        margin-bottom: 51px;
-    }
-    @media (min-width: $desktop-width) {
-        position: absolute;
-        top: 303px;
-        left: 721px;
-        padding: 16px 44px 16px 43px;
-    }
+  order: 4;
+  margin: 0;
+  margin-top: 40px;
+  margin-left: 34px;
+  margin-right: 32px;
+  margin-bottom: 33px;
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 16px;
+  padding: 16px 21px 15px 19px;
+  text-transform: uppercase;
+  border: 2px solid $Tundora;
+  color: $Tundora;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    order: 2;
+    margin-left: 40px;
+    padding: 16px 220px 15px 222px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 303px;
+    left: 721px;
+    padding: 16px 44px 16px 43px;
+  }
 }
 
 .instructions-block__link:visited {
-    @include BtnVisited;
+  @include BtnVisited;
 }
 
 .instructions-block__link:hover {
-    @include BtnHover;
+  @include BtnHover;
 }
 
 .instructions-block__link:active {
-    @include BtnActive;
+  @include BtnActive;
 }
-

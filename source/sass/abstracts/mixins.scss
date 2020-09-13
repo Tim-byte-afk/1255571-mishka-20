@@ -1,28 +1,27 @@
-@import './functions.scss';
-@import './variables.scss';
+@import "./variables.scss";
 
 @mixin BtnVisited {
-    color: $Tundora;
+  color: $Tundora;
 }
 
 @mixin BtnHover {
-    color: $White;
-    background: linear-gradient(0deg, $Tundora, $Tundora);
-    border: 2px solid $Tundora;
+  color: $White;
+  background: linear-gradient(0deg, $Tundora, $Tundora);
+  border: 2px solid $Tundora;
 }
 
 @mixin BtnActive {
-    color: $whiteRgba;
-    background: linear-gradient(0deg, $Tundora, $Tundora);
-    border: 2px solid $Tundora;
+  color: $whiteRgba;
+  background: linear-gradient(0deg, $Tundora, $Tundora);
+  border: 2px solid $Tundora;
 }
 
 @mixin VisuallyHidden {
-    position: absolute;
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0;
-    border: 0;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
